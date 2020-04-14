@@ -1,0 +1,27 @@
+{
+  "name": "home",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "parcel index.html"
+  }, 
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.0.0",
+    "babel-core": "^6.26.3",
+    "sass": "^1.23.3",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.4",
+    "vue": "^2.6.11",
+    "vue-hot-reload-api": "^2.3.3",
+    "vue-mq": "^1.0.1",
+    "vue-router": "^3.1.6",
+    "vuetify": "^2.2.21"
+  }
+}
