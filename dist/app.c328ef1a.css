@@ -1468,14 +1468,14 @@ header a {
   color: #2eaabe !important;
 }
 #collaborate .collab img {
-  max-width: 25%;
+  max-width: 40%;
 }
 #collaborate .collab-content {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 #connect-content {

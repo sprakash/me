@@ -56620,7 +56620,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-//
 var _default = {
   name: 'Connect',
   components: {
@@ -56696,15 +56695,11 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("div", { staticClass: "collab-content" }, [
                   _c("img", {
-                    attrs: { src: "/jfm2.af867b92.jpg" }
+                    attrs: { src: "/jfm1.6aef3d74.jpg" }
                   }),
                   _vm._v(" "),
                   _c("img", {
                     attrs: { src: "/jfm.4354f255.jpg" }
-                  }),
-                  _vm._v(" "),
-                  _c("img", {
-                    attrs: { src: "/jfm1.6aef3d74.jpg" }
                   }),
                   _vm._v(
                     "\n\t\t\t\t\t\t   I wrote, directed and staged a children's play for an organization: Just For Myself for their annual show for the organization in March 2020. Just For Myself is a not-for-profit organization that educates children of construction workes and house help, helps them get placed in schools and provides for basic nutrition and counseling.  The organization is based in Gurgaon, Haryana. The founder Mrs. Ranjana Joshi entrusted me with writing a play based on the story of how her organization came to be. The play includes music and movement. I wrote the piece and rehearsed with the children in a park of their community for several weekends to present a stage show. They were coached in performance on stage, voice work and scene improvisation.\n\t\t\t\t\t\t"
@@ -56991,7 +56986,7 @@ render._withStripped = true
       
       }
     })();
-},{"./Navigation":"components/Navigation.vue","C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\jfm2.jpg":[["jfm2.af867b92.jpg","assets/fake/jfm2.jpg"],"assets/fake/jfm2.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\jfm.jpg":[["jfm.4354f255.jpg","assets/fake/jfm.jpg"],"assets/fake/jfm.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\jfm1.jpg":[["jfm1.6aef3d74.jpg","assets/fake/jfm1.jpg"],"assets/fake/jfm1.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\halApplogo.jpg":[["halApplogo.289e6474.jpg","assets/fake/halApplogo.jpg"],"assets/fake/halApplogo.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\digitalArtExhibition.jpg":[["digitalArtExhibition.631be12b.jpg","assets/fake/digitalArtExhibition.jpg"],"assets/fake/digitalArtExhibition.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\icons\\twitter.svg":[["twitter.f2da1eec.svg","assets/icons/twitter.svg"],"assets/icons/twitter.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\icons\\fb.svg":[["fb.efb36eed.svg","assets/icons/fb.svg"],"assets/icons/fb.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\icons\\linkedin.svg":[["linkedin.15978cba.svg","assets/icons/linkedin.svg"],"assets/icons/linkedin.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\icons\\insta.svg":[["insta.f364b010.svg","assets/icons/insta.svg"],"assets/icons/insta.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\icons\\github.svg":[["github.373d19b5.svg","assets/icons/github.svg"],"assets/icons/github.svg"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"app.js":[function(require,module,exports) {
+},{"./Navigation":"components/Navigation.vue","C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\jfm1.jpg":[["jfm1.6aef3d74.jpg","assets/fake/jfm1.jpg"],"assets/fake/jfm1.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\jfm.jpg":[["jfm.4354f255.jpg","assets/fake/jfm.jpg"],"assets/fake/jfm.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\halApplogo.jpg":[["halApplogo.289e6474.jpg","assets/fake/halApplogo.jpg"],"assets/fake/halApplogo.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\digitalArtExhibition.jpg":[["digitalArtExhibition.631be12b.jpg","assets/fake/digitalArtExhibition.jpg"],"assets/fake/digitalArtExhibition.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\icons\\twitter.svg":[["twitter.f2da1eec.svg","assets/icons/twitter.svg"],"assets/icons/twitter.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\icons\\fb.svg":[["fb.efb36eed.svg","assets/icons/fb.svg"],"assets/icons/fb.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\icons\\linkedin.svg":[["linkedin.15978cba.svg","assets/icons/linkedin.svg"],"assets/icons/linkedin.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\icons\\insta.svg":[["insta.f364b010.svg","assets/icons/insta.svg"],"assets/icons/insta.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\icons\\github.svg":[["github.373d19b5.svg","assets/icons/github.svg"],"assets/icons/github.svg"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"app.js":[function(require,module,exports) {
 "use strict";
 
 var _vue = _interopRequireDefault(require("vue"));
@@ -57105,7 +57100,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63470" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60985" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

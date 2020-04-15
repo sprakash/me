@@ -18,9 +18,8 @@
 					<div class="collab">
 						<h2>Theatre</h2>
 						<div class="collab-content">
-						   	<img src="/assets/fake/jfm2.jpg"/>
-						   	<img src="/assets/fake/jfm.jpg"/>
 						   	<img src="/assets/fake/jfm1.jpg"/>
+						   	<img src="/assets/fake/jfm.jpg"/>
 						   I wrote, directed and staged a children's play for an organization: Just For Myself for their annual show for the organization in March 2020. Just For Myself is a not-for-profit organization that educates children of construction workes and house help, helps them get placed in schools and provides for basic nutrition and counseling.  The organization is based in Gurgaon, Haryana. The founder Mrs. Ranjana Joshi entrusted me with writing a play based on the story of how her organization came to be. The play includes music and movement. I wrote the piece and rehearsed with the children in a park of their community for several weekends to present a stage show. They were coached in performance on stage, voice work and scene improvisation.
 						</div>
 					</div>
@@ -134,7 +133,7 @@ header {
 			}
 
 			img {
-				max-width:25%;
+				max-width:40%;
 			}
 
 			&-content {
@@ -142,7 +141,7 @@ header {
 				flex-direction: row;
 				align-items: flex-start;
 				flex-wrap: wrap;
-				justify-content: space-evenly
+				justify-content: space-around;
 			}
 		}
 
