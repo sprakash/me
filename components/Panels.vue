@@ -1,31 +1,31 @@
 <template>
 	<div id="panels">
-		<section class="panel-container">
-			<ul class="panel-area">
-				<li v-bind:id="singlePanel.id" v-bind:style="{zIndex: currentOrder[index].zIndex , minHeight: newHeights}" v-for="(singlePanel, index) in panels" class="single-panel">
+<!-- 		<section class="panel-container">
+ -->			<div class="panel-area">
+				<!-- <div v-bind:id="singlePanel.id" v-bind:style="{zIndex: currentOrder[index].zIndex , minHeight: newHeights}" v-for="(singlePanel, index) in panels" class="single-panel"> -->
 
-					<div>
+					<div v-bind:id="singlePanel.id" v-for="(singlePanel, index) in panels" v-bind:style="{zIndex: currentOrder[index].zIndex , minHeight: newHeights}"  class="single-panel" >
 						<div class="panel-content">
 							<h1 class="panel-header">{{singlePanel.title}}</h1>
 							{{singlePanel.content}}
 			
 							<router-link :to="{name:singlePanel.title}"> More &raquo;</router-link>
 						</div>
-
+						<div class="button-areas">
+							<div class="prev" v-on:click="previousPanel(singlePanel.title)">&#10094;</div>
+							<!-- <span class="panel-number" v-for="(index, singlePageNum) in panels">{{ singlePageNum+1 }}</span> -->
+							<div class="next" v-on:click="nextPanel(singlePanel.title)">&#10095;</div>
+				  		</div>
 					</div>
 
-					<div class="button-areas">
-					<div class="prev" v-on:click="previousPanel(singlePanel.title)">&#10094;</div>
-						<!-- <span class="panel-number" v-for="(index, singlePageNum) in panels">{{ singlePageNum+1 }}</span> -->
-						<div class="next" v-on:click="nextPanel(singlePanel.title)">&#10095;</div>
-				  	</div>
-				</li>
-			</ul>
+				
+				<!-- </div> -->
+			</div>
 
 			
 
-		</section>
-	</div>
+<!-- 		</section>
+ -->	</div>
 </template>
 <script>
 	export default {
@@ -161,6 +161,10 @@
 		justify-content: space-between;
 		width: 100%;
 
+		& > div {
+			flex: 1;
+		}
+
 		.sm & {
 			flex-flow: column;
 
@@ -173,7 +177,7 @@
 
 
 		.md & {
-			position: relative;
+			flex-direction: column;
 		}
 	}
 	
@@ -234,12 +238,14 @@
 	    width: 65%;
 
 	    a {
-	    	font-family: Palatino;
 		    font-size: 1em;
 		    letter-spacing: .1em;
 		    cursor: pointer;
 		    color: #9fd7e8 !important;
 		    font-style: italic;
+		    text-transform: lowercase;
+    		font-weight: bold;
+    		text-decoration: none;
 	    }
 
 		&:hover {
@@ -254,13 +260,15 @@
 	    	z-index: 13;
 			padding-bottom: 5em;
 			width: auto;
-			font-size: .85em;
+			font-size: 1.25em;
 	    }
 
 	    .sm & {
 			margin: 0 auto;
 			z-index: 13;
-			width: 90%;
+			width: 100%;
+			font-size: 1em;
+			padding: 1em;
 		}
 
 	}
@@ -284,18 +292,19 @@
 		display: none;
 
 		.sm & {
-			display: inline-flex;
-			position: relative;
-		    top: -3em;
-		    height: 48px;
-		    width: 100%;
-		    z-index: 15;
-			margin: 0 auto;
-			align-items: center;
 
-			.panel-number {
-				margin: 0 auto;
-			}
+			// display: inline-flex;
+			// position: relative;
+		 //    top: -3em;
+		 //    height: 48px;
+		 //    width: 100%;
+		 //    z-index: 15;
+			// margin: 0 auto;
+			// align-items: center;
+
+			// .panel-number {
+			// 	margin: 0 auto;
+			// }
 		}
 
 		.md & {
@@ -367,16 +376,16 @@
 	    .sm & {
 	    	background-size: cover;
 			width: 100%;
-			background-position: 0 -10px;
-			min-height: 60% !important;
+			min-height: 33.3% !important;
 			background-color: black;
+			background-position: -110px 0;
 
 	    }
 
 	    .md & {
 	    	background-size: cover;
 			width: 100%;
-			background-position: 0 -10px;
+			background-position: 0 -25px;
 			min-height: auto !important;
 
 			.panel-content {
@@ -397,7 +406,7 @@
 	    .sm & {
 	    	background-size: cover;
 			width: 100%;
-			min-height: 60% !important;
+			min-height: 33.3% !important;
 			background-position: 0;
 			background-color: black;
 
@@ -423,7 +432,7 @@
 	    .sm & {
 	    	background-size: contain;
 		    width: 100%;
-		    min-height: 60% !important;
+		    min-height: 33.3% !important;
 		    background-position: 50%;
 		    background-color: black;
 	    }

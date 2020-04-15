@@ -8,7 +8,7 @@
 		    <li id="digital"><router-link :to="{name: 'Digital'}">Digital / Intersect</router-link></li>
 		      <li id="fontwala"><a href="http://sprakash.github.io/portfolio/fontwala.html" target="_blank">Fontwala</a></li>
 		     <li id="blog"><a href="http://shubhraprakash.blogspot.com" target="_blank">Blog</a></li>
- 	  	 		<li id="connect"><router-link :to="{name: 'Connect'}">Connect</router-link></li>
+ 	  	 		<li id="connect"><router-link :to="{name: 'Collaborate'}">Collaborate</router-link></li>
 			</ul>
 		</nav>
 
@@ -22,7 +22,7 @@
 			    <li id="digital"><router-link :to="{name: 'Digital'}">Digital / Intersect</router-link></li>
 			    <li id="fontwala"><a href="http://sprakash.github.io/portfolio/fontwala.html" target="_blank">Fontwala</a></li>
   				<li id="blog"><a href="http://www.shubhraprakash.blogspot.com" target="_blank"/>Blog</a></li>    
- 				<li id="connect"><router-link :to="{name: 'Connect'}">Connect</router-link></li>
+ 				<li id="connect"><router-link :to="{name: 'Collaborate'}">Collaborate</router-link></li>
 			</ul>
 		</nav>
 	</div>
@@ -81,10 +81,7 @@
 		}
 
 		.md & {
-			align-items: center;
-			padding: 0 2em;
-			flex-direction: row !important;
-			left: 0;
+			position: absolute;
 		}
 
 		h1 {
@@ -142,6 +139,9 @@
 			.md & {
 				float: right;
 				cursor: pointer;
+				top: 3px;
+			    position: absolute;
+			    right: 3%;
 			}
 		}
 	}
@@ -172,8 +172,19 @@
 
 	.mobile {
 
+		a {
+			span {
+				border: 3px solid;
+    			border-image-source: linear-gradient(to left, #E91E63, #FF9800);
+    		border-image-slice: 1;
+			}
+		}
+
 		.sm & {
 			display: block;
+			position: absolute;
+		    right: 0px;
+		    top: 3px;
 		}
 
 		.md & {
@@ -194,7 +205,7 @@
 
 		     li {
 		     	margin: .1em 0;
-				background: linear-gradient(270deg, #f970b1, #ffc1077d, #ff4b1296, #00c3ff);
+				background: linear-gradient(270deg, #f970b1, #ddd255, #e76339, #00c3ff);
 				/** background: linear-gradient(270deg, #f970b1, #e67a83, #7dd2ec); */
 				padding: .85em 0;
 				display:block;

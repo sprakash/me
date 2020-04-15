@@ -250,11 +250,11 @@
 
 		&-headers {
 			font-size: 0.75em;
-		    color: gray;
+		    color: black;
 		    width: 100%;
 		    display: flex;
 		    letter-spacing: .1em;
-		    font-weight: lighter;
+		    font-weight: bolder;
 		    margin-bottom: 0.5em;
 		    padding: .5em;
 		    justify-content: space-between;

@@ -19,7 +19,7 @@ import App from './App.vue';
 import Digital from './components/Digital'
 import Theatre from './components/Theatre'
 import Film from './components/Film'
-import Connect from './components/Connect'
+import Collaborate from './components/Collaborate'
 import Landing from './components/Landing'
 
 Vue.use(VueMq, {
@@ -53,9 +53,9 @@ const routes= [
       props: true
     },
      {
-    	path: '/connect',
-    	name: 'Connect',
-    	component: Connect,
+    	path: '/collaborate',
+    	name: 'Collaborate',
+    	component: Collaborate,
      	props: false
     },
     {

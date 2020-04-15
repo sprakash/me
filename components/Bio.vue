@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="longbio">
-		<span>Welcome to my website. Here you can learn about my work on stage, film and digital medium as a performer, writer and producer. I believe human beings must dream big and continue to challenge themselves. I aspire next to create my most ambitious work yet : Fontwala inspired by the story of my uncle’s life as an artist, entreprenuer and visionary of Indian letterforms. Read all about Fontwala <a href="http://sprakash.github.io/portfolio/fontwala.html" target="_blank">here</a>.</span>  
+		<span>Welcome to my website. Here you can learn about my work on stage, film and digital medium as a performer, writer and producer.  My goal is to create and devise new work.  I aspire next to create my most ambitious work yet : Fontwala inspired by the story of my uncle’s life as an artist, entreprenuer and visionary of Indian letterforms. Read all about Fontwala. <a href="http://sprakash.github.io/portfolio/fontwala.html" target="_blank">here</a>.</span>  
 		<!-- <span class="quote">“How we spend our days is how we spend our lives.”  - Annie Dillard </span>
 	    <section id="bio-action"><span>Download Resume</span> <span>Subscribe to Blog</span></section> -->
 
@@ -33,10 +33,11 @@
 
     		.sm & {
     			padding : .5em;
+    			display: none;
     		}
 
     		.md & {
-    			margin: 0;
+				display: none;    			
     		}
 
 		&-action { 
