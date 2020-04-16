@@ -45,13 +45,13 @@
 		},
         mounted: function () {
             console.log("landing mounted");
-            this.adjustHeight();
+          //  this.adjustHeight();
         },
         created: function() {       
-            window.addEventListener('resize', this.adjustHeight);
+          //  window.addEventListener('resize', this.adjustHeight);
         },
         destroyed() {
-           window.removeEventListener("resize", this.adjustHeight);
+          // window.removeEventListener("resize", this.adjustHeight);
         },
         methods : {
             adjustHeight: function() {
@@ -107,6 +107,10 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
+
+    .sm & {
+        flex-direction: column-reverse;
+    }
 }
 
 header {
@@ -114,9 +118,27 @@ header {
     flex-direction: column;
     position: static;
 
+    .sm & {
+        position: absolute;
+        background: none;
+
+        h1 {
+            display: none;
+        }
+    }
+
+    .md & {
+        position: absolute;
+        background: none;
+    }
+
     h1 {
         font-size: 2em;
         margin: .125em  0 0 0;
+
+        .md & {
+            display: none;
+        }
     }
 }
 

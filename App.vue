@@ -40,18 +40,15 @@
 	html, body {
 		margin: 0 auto;
 		padding: 0;
-		width: 100%;
-		height: 100%;
 		box-sizing: border-box;
 
 		.md {
-			width: 90% !important;
 			margin: 0 auto;
 		}
 
 	}
 	body {
-		background-color: whitesmoke;
+		background-color: black;
 		font-family: Roboto, Helvetica, Arial, sans-serif;
 		min-height: 100vh;
 		display: flex;

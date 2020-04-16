@@ -40,7 +40,7 @@
 					    <v-expansion-panel v-for="(entry,i) in myJson['Theatre']"
 							    v-if="entry[sortKey] === showFilter || showFilter === 'All'"
 							    :item="entry"
-					     		:key="i"  v-bind:id="entry.id" :style="{ backgroundImage: `url(${entry.mainpic})`, backgroundRepeat:`no-repeat`, backgroundSize: `cover`, borderRadius : `10px` }">
+					     		:key="i"  v-bind:id="entry.id" :style="{ backgroundImage: `url(${entry.mainpic})`, backgroundRepeat:`no-repeat`, backgroundPosition:'right', backgroundSize: `contain`, borderRadius : `10px` }">
 					      <v-expansion-panel-header>
 					      	<span class="show-info">
 						      	<span class="show-header">
@@ -232,7 +232,6 @@
 			display:flex;
 			flex-direction: row;
 			justify-content: space-between;
-			width: 100%;
 			background-color: #ffffffb0;
     		padding: 0 .85em;
     		border-radius: 10px;
@@ -250,11 +249,11 @@
 
 		&-headers {
 			font-size: 0.75em;
-		    color: gray;
+		    color: black;
 		    width: 100%;
 		    display: flex;
 		    letter-spacing: .1em;
-		    font-weight: lighter;
+		    font-weight: bolder;
 		    margin-bottom: 0.5em;
 		    padding: .5em;
 		    justify-content: space-between;
@@ -485,7 +484,7 @@
 
 		button {
 			padding: 1em 1.5em;
-		    background-color: #1d20235c;
+		    background-color: #03a9f40f;
 		    font-size: 1em;
 		    color: #084086;
 		    text-align: justify;
@@ -557,11 +556,6 @@
 		background-position: center 52%;
 	}
 
-	#sheherezadeXI {
-		background-position: 0 10%;
-		background-size: 128% !important;
-	}
-
 	#midsummer {
 		background-position: center 25%;
 	}
@@ -570,8 +564,9 @@
 		background-position: center 20%;
 	}
 
-	#sultanaDakuNautanki {
-		background-position: 0 30%;
-		background-size: 125% !important;
+	#ramleela {
+		background-size: 20% !important;
 	}
+
+
 </style>

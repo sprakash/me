@@ -71,6 +71,7 @@
 
 		.announce-area {
 			z-index: 0;
+			display: none;
 		}
 
 
@@ -93,9 +94,17 @@
 		}
 	}
 	
-	.md #announcements {
+	.md  { 
+
+	.announce-area {
+		display: none;
+	 }
+
+	 #announcements {
 		z-index: 23;
 		font-size: .75em;
+	 }
+	
 	}
 
 	.svgStylin {
