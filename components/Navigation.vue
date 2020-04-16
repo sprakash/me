@@ -176,7 +176,7 @@
 			span {
 				border: 3px solid;
     			border-image-source: linear-gradient(to left, #E91E63, #FF9800);
-    		border-image-slice: 1;
+    			border-image-slice: 1;
 			}
 		}
 

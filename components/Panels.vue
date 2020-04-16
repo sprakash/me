@@ -385,7 +385,7 @@
 	    .md & {
 	    	background-size: cover;
 			width: 100%;
-			background-position: 0 -25px;
+			background-position: 0 0;
 			min-height: auto !important;
 
 			.panel-content {

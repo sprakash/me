@@ -48,7 +48,7 @@
 
 	}
 	body {
-		background-color: whitesmoke;
+		background-color: black;
 		font-family: Roboto, Helvetica, Arial, sans-serif;
 		min-height: 100vh;
 		display: flex;

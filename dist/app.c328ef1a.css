@@ -316,7 +316,7 @@ li a:hover {
 .md #theatre-area {
   background-size: cover;
   width: 100%;
-  background-position: 0 -25px;
+  background-position: 0 0;
   min-height: auto !important;
 }
 .md #theatre-area .panel-content {
@@ -639,7 +639,7 @@ html .md, body .md {
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: black;
   font-family: Roboto, Helvetica, Arial, sans-serif;
   min-height: 100vh;
   display: flex;
@@ -914,7 +914,6 @@ td[data-v-793753] {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
   background-color: #ffffffb0;
   padding: 0 0.85em;
   border-radius: 10px;
@@ -1115,7 +1114,7 @@ td[data-v-793753] {
 }
 .v-expansion-panel button[data-v-793753] {
   padding: 1em 1.5em;
-  background-color: #1d20235c;
+  background-color: #03a9f40f;
   font-size: 1em;
   color: #084086;
   text-align: justify;
@@ -1176,19 +1175,14 @@ td[data-v-793753] {
 #theProcedure[data-v-793753] {
   background-position: center 52%;
 }
-#sheherezadeXI[data-v-793753] {
-  background-position: 0 10%;
-  background-size: 128% !important;
-}
 #midsummer[data-v-793753] {
   background-position: center 25%;
 }
 #ozmaOfOz[data-v-793753] {
   background-position: center 20%;
 }
-#sultanaDakuNautanki[data-v-793753] {
-  background-position: 0 30%;
-  background-size: 125% !important;
+#ramleela[data-v-793753] {
+  background-size: 20% !important;
 }
 header a {
   text-decoration: none;
