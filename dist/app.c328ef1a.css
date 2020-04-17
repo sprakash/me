@@ -959,7 +959,7 @@ td[data-v-793753] {
   font-size: 1em;
 }
 #shows[data-v-793753] {
-  padding-top: 3em;
+  padding-top: 0.5em;
 }
 .show-container[data-v-793753] {
   margin: 0 auto;
@@ -1125,10 +1125,9 @@ td[data-v-793753] {
 }
 .word-cloud[data-v-793753] {
   display: flex;
-  margin-top: 2em;
   flex-direction: column;
   width: 70%;
-  margin: 0 auto;
+  margin: 2em auto;
 }
 .word-cloud span[data-v-793753] {
   font-weight: bolder;

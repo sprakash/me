@@ -55550,6 +55550,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
 var _default = {
   name: 'ShowList',
   components: {},
@@ -55586,6 +55587,31 @@ exports.default = _default;
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "shows" } }, [
+    _c("div", { staticClass: "word-cloud" }, [
+      _c("span", [_vm._v("FILTER")]),
+      _vm._v(" "),
+      _c(
+        "ul",
+        _vm._l(_vm.showFilterList, function(entry, index) {
+          return _c(
+            "li",
+            {
+              key: index,
+              class: { showActive: entry == _vm.showFilter },
+              attrs: { item: entry },
+              on: {
+                click: function($event) {
+                  _vm.showFilter = entry
+                }
+              }
+            },
+            [_vm._v("\n\t\t\t\t\t\t\t  " + _vm._s(entry) + "\n\t\t\t\t\t\t")]
+          )
+        }),
+        0
+      )
+    ]),
+    _vm._v(" "),
     _c("section", { staticClass: "show-container" }, [
       _c("div", { staticClass: "show-filter" }, [
         _c(
@@ -55704,38 +55730,7 @@ exports.default = _default;
           1
         ),
         _vm._v(" "),
-        _c("div", { staticClass: "show-side" }, [
-          _c("div", { staticClass: "word-cloud" }, [
-            _c("span", [_vm._v("FILTER")]),
-            _vm._v(" "),
-            _c(
-              "ul",
-              _vm._l(_vm.showFilterList, function(entry, index) {
-                return _c(
-                  "li",
-                  {
-                    key: index,
-                    class: { showActive: entry == _vm.showFilter },
-                    attrs: { item: entry },
-                    on: {
-                      click: function($event) {
-                        _vm.showFilter = entry
-                      }
-                    }
-                  },
-                  [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t  " + _vm._s(entry) + "\n\t\t\t\t\t\t"
-                    )
-                  ]
-                )
-              }),
-              0
-            )
-          ]),
-          _vm._v(" "),
-          _vm._m(1)
-        ])
+        _vm._m(1)
       ])
     ])
   ])
@@ -55757,140 +55752,142 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "skillset" } }, [
-      _c("div", { attrs: { id: "trainingSkills" } }, [
-        _c("h1", [_vm._v("TRAINING")]),
-        _vm._v(" "),
-        _c("ul", { staticClass: "trainingList" }, [
-          _c("li", [
-            _vm._v(
-              "Documentary Theatre & Teaching Artist Training with Ping Chong & Company. New York."
-            )
+    return _c("div", { staticClass: "show-side" }, [
+      _c("div", { attrs: { id: "skillset" } }, [
+        _c("div", { attrs: { id: "trainingSkills" } }, [
+          _c("h1", [_vm._v("TRAINING")]),
+          _vm._v(" "),
+          _c("ul", { staticClass: "trainingList" }, [
+            _c("li", [
+              _vm._v(
+                "Documentary Theatre & Teaching Artist Training with Ping Chong & Company. New York."
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "Indian Classical Singing (Kirana Gharana), private coaching w/ Sandip Bhattacharjee. New York & India."
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "On Camera Scene Study w/ Courtney Burr at Margie Haber Studio, Los Angeles. "
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "Film Acting Technique w/ Nancy Berwid at FirstTake Acting Studio, San Francisco. "
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "Musical Theatre Summer Conservatory w/ Marc Jacobs, Notre Dame De Namur University, Silicon Vallery."
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "Voice/Singing for Musical Theatre, Private Coaching w/ Michael Pesce, New York City."
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "Acting Shakespeare’s Verse, Private coaching w/ Deloss Brown, New York City. \n"
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "Classical Commedia D’ell Arte w/ Stanley Allan Sherman at Roving Classical Commedia, New York City.\n\n"
+              )
+            ])
           ]),
           _vm._v(" "),
-          _c("li", [
-            _vm._v(
-              "Indian Classical Singing (Kirana Gharana), private coaching w/ Sandip Bhattacharjee. New York & India."
-            )
+          _c("h1", [_vm._v("LABS / WORKSHOPS")]),
+          _vm._v(" "),
+          _c("ul", { staticClass: "trainingList" }, [
+            _c("li", [
+              _vm._v(
+                "Participant @ Where Film & Anthropology Intersect, Workshop on Documentary Filmmaking with Harjant Gill. New Delhi 2019"
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v("Participant @ "),
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "https://www.tfiny.org/events/detail/immigration_co_lab_nyc",
+                    target: "_blank"
+                  }
+                },
+                [_vm._v("IMMIGRATION CO/LAB | NYC - Tribeca Film Institute")]
+              ),
+              _vm._v(". New York City 2017")
+            ])
           ]),
           _vm._v(" "),
-          _c("li", [
-            _vm._v(
-              "On Camera Scene Study w/ Courtney Burr at Margie Haber Studio, Los Angeles. "
-            )
+          _c("h1", [_vm._v("TALKS / PRESENTATIONS ")]),
+          _vm._v(" "),
+          _c("ul", { staticClass: "trainingList" }, [
+            _c("li", [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "https://www.docville.be/nl/film/webdox-40-user-engagement",
+                    target: "_blank"
+                  }
+                },
+                [
+                  _vm._v(
+                    "Presenter @ WebDox Conference (User Engagement) Leuven, Belgium 2015"
+                  )
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href: "http://www.sawcc.org/new-films-2015/",
+                    target: "_blank"
+                  }
+                },
+                [
+                  _vm._v(
+                    "Presenter / Filmmaker @ South Asian Women's Creative New Films 2015"
+                  )
+                ]
+              )
+            ])
           ]),
           _vm._v(" "),
-          _c("li", [
-            _vm._v(
-              "Film Acting Technique w/ Nancy Berwid at FirstTake Acting Studio, San Francisco. "
-            )
-          ]),
+          _c("h1", { staticClass: "skills" }, [_vm._v("SKILLS")]),
           _vm._v(" "),
-          _c("li", [
-            _vm._v(
-              "Musical Theatre Summer Conservatory w/ Marc Jacobs, Notre Dame De Namur University, Silicon Vallery."
-            )
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _vm._v(
-              "Voice/Singing for Musical Theatre, Private Coaching w/ Michael Pesce, New York City."
-            )
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _vm._v(
-              "Acting Shakespeare’s Verse, Private coaching w/ Deloss Brown, New York City. \n"
-            )
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _vm._v(
-              "Classical Commedia D’ell Arte w/ Stanley Allan Sherman at Roving Classical Commedia, New York City.\n\n"
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("h1", [_vm._v("LABS / WORKSHOPS")]),
-        _vm._v(" "),
-        _c("ul", { staticClass: "trainingList" }, [
-          _c("li", [
-            _vm._v(
-              "Participant @ Where Film & Anthropology Intersect, Workshop on Documentary Filmmaking with Harjant Gill. New Delhi 2019"
-            )
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _vm._v("Participant @ "),
-            _c(
-              "a",
-              {
-                attrs: {
-                  href:
-                    "https://www.tfiny.org/events/detail/immigration_co_lab_nyc",
-                  target: "_blank"
-                }
-              },
-              [_vm._v("IMMIGRATION CO/LAB | NYC - Tribeca Film Institute")]
-            ),
-            _vm._v(". New York City 2017")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("h1", [_vm._v("TALKS / PRESENTATIONS ")]),
-        _vm._v(" "),
-        _c("ul", { staticClass: "trainingList" }, [
-          _c("li", [
-            _c(
-              "a",
-              {
-                attrs: {
-                  href:
-                    "https://www.docville.be/nl/film/webdox-40-user-engagement",
-                  target: "_blank"
-                }
-              },
-              [
-                _vm._v(
-                  "Presenter @ WebDox Conference (User Engagement) Leuven, Belgium 2015"
-                )
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c(
-              "a",
-              {
-                attrs: {
-                  href: "http://www.sawcc.org/new-films-2015/",
-                  target: "_blank"
-                }
-              },
-              [
-                _vm._v(
-                  "Presenter / Filmmaker @ South Asian Women's Creative New Films 2015"
-                )
-              ]
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("h1", { staticClass: "skills" }, [_vm._v("SKILLS")]),
-        _vm._v(" "),
-        _c("ul", { staticClass: "trainingList" }, [
-          _c("li", [_vm._v("Open Water Scuba Certification.")]),
-          _vm._v(" "),
-          _c("li", [
-            _vm._v(
-              "Dialects/Accents : South East London, African American, Russian & French."
-            )
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _vm._v(
-              "Fluent (Speak, read, write and sing) in Hindi. Conversational Bengali and French."
-            )
+          _c("ul", { staticClass: "trainingList" }, [
+            _c("li", [_vm._v("Open Water Scuba Certification.")]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "Dialects/Accents : South East London, African American, Russian & French."
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "Fluent (Speak, read, write and sing) in Hindi. Conversational Bengali and French."
+              )
+            ])
           ])
         ])
       ])

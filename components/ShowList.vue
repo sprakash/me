@@ -1,5 +1,19 @@
 <template>
 	<div id="shows">
+		<div class="word-cloud">
+					<span>FILTER</span>
+					<ul>
+							<li
+							  v-for="(entry, index) in showFilterList"
+							  :item="entry"
+							  :key="index"
+							  @click="showFilter = entry;"
+							  :class="{ showActive: entry == showFilter }"
+							>
+							  {{ entry }}
+						</li>
+					</ul>
+				</div>
 		<section class="show-container">
 			<div class="show-filter">
 			<!-- <table class="show-area" align="center">
@@ -79,20 +93,7 @@
 		    	</div>
 
 		    	<div class="show-side">
-				<div class="word-cloud">
-					<span>FILTER</span>
-					<ul>
-							<li
-							  v-for="(entry, index) in showFilterList"
-							  :item="entry"
-							  :key="index"
-							  @click="showFilter = entry;"
-							  :class="{ showActive: entry == showFilter }"
-							>
-							  {{ entry }}
-						</li>
-					</ul>
-				</div>
+				
 
 
 			<div id="skillset">
@@ -223,7 +224,7 @@
 	}
 
 	#shows {
-		padding-top: 3em;
+		padding-top: .5em;
 	}
 
 	.show {
@@ -438,10 +439,9 @@
 
 	.word-cloud {
 		display: flex;
-		margin-top: 2em;
 		flex-direction: column;
 		width: 70%;
-    	margin: 0 auto;
+    	margin: 2em auto;
 		
 
 		span {
