@@ -235,6 +235,7 @@
 					    text-align: right;
 						font-size: 1.5em;
 				    	margin-right: 1em;
+				    	margin-top: 0 !important;
 					}
 				}
 
