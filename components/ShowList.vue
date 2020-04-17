@@ -285,10 +285,6 @@
 			}
 		}
 
-		&-content {
-			width: 100%;
-		}
-
 		&-expanded {
 			background-color: lightgrey;
 			border: 1px solid #ff430859;

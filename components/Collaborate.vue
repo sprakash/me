@@ -84,7 +84,7 @@
 					</section>
 
 					<div class="collaborate-lower">
-							<article>This site has been created by yours truly using Vue framework and The code can be checked out on : <a href="https://github.com/sprakash/me" target="_blank">GitHub</a>.</article>	
+							<article>This site has been created by yours truly using Vue framework and the code can be checked out on : <a href="https://github.com/sprakash/me" target="_blank">GitHub</a>.</article>	
 					</div>
 				</div>
 			</section>
@@ -161,6 +161,9 @@ header {
 			    flex-direction: row;
 			    justify-content: space-between;
 			    text-align: justify;
+			    font-size: 1.5em;
+    			line-height: 1.85em;
+    			font-weight: bold;
 
 			    .md & {
 			    	flex-direction: column;
@@ -217,7 +220,11 @@ header {
 		font-weight: 100;
 
 		.sm & {
-			padding-top: 0;
+			padding-top: 2em;
+		}
+
+		.md & {
+			padding-top: 8em;
 		}
 	}
 	

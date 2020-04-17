@@ -60,13 +60,13 @@
 
 		.sm & {
 			flex: 2;
-			padding: 0;
+			padding: 3em 0;
 			margin: 0;
 		}
 
 		.md & {
 			flex: 2;
-			padding: 0;
+			padding: 3em 0;
 			margin: 0;
 		}
 	}
@@ -222,7 +222,7 @@
 			    padding: 0.85em 0;
 			    display: block;
 			    border-bottom: 1px solid black;
-			    font-size: 1.25em;
+			    font-size: 2.5em;
 			    border-image-source: linear-gradient(270deg, #ff0079, #ffc410, #df420f, #01bffa);
     			border-image-slice: 1;
 

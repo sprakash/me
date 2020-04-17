@@ -103,11 +103,12 @@ header {
         padding-top: 2em;
 
         .sm & {
-            padding-top: 0;
+            padding-top: 2em;
         }
 
         .md & {
             align-content  : center;
+            padding-top: 4em;
         }
 
     }

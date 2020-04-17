@@ -300,7 +300,11 @@ h3 {
 		padding-top: 8em;
 
 		.sm & {
-			padding-top: 0;
+			padding-top: 8em;
+		}
+
+		.md & {
+			padding-top: 8em;
 		}
 	}
 

@@ -212,7 +212,11 @@ h3 {
 		padding-top: 4em;
 
 		.sm & {
-			padding-top: 0;
+			padding-top: 2em;
+		}
+
+		.md & {
+			padding-top: 8em;
 		}
 	}
 

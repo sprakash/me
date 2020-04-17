@@ -56999,7 +56999,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "collaborate-lower" }, [
               _c("article", [
                 _vm._v(
-                  "This site has been created by yours truly using Vue framework and The code can be checked out on : "
+                  "This site has been created by yours truly using Vue framework and the code can be checked out on : "
                 ),
                 _c(
                   "a",
@@ -57166,7 +57166,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50364" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58152" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

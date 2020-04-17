@@ -4,12 +4,12 @@
 }
 .sm #navigation {
   flex: 2;
-  padding: 0;
+  padding: 3em 0;
   margin: 0;
 }
 .md #navigation {
   flex: 2;
-  padding: 0;
+  padding: 3em 0;
   margin: 0;
 }
 
@@ -124,7 +124,7 @@ li a:hover {
   padding: 0.85em 0;
   display: block;
   border-bottom: 1px solid black;
-  font-size: 1.25em;
+  font-size: 2.5em;
   border-image-source: linear-gradient(270deg, #ff0079, #ffc410, #df420f, #01bffa);
   border-image-slice: 1;
 }
@@ -875,7 +875,10 @@ h3[data-v-4520b8]:hover {
   padding-top: 4em;
 }
 .sm #digital-content[data-v-4520b8] {
-  padding-top: 0;
+  padding-top: 2em;
+}
+.md #digital-content[data-v-4520b8] {
+  padding-top: 8em;
 }
 #digital-title[data-v-4520b8] {
   padding: 2em 0 0;
@@ -1008,9 +1011,6 @@ td[data-v-793753] {
 .sm .show-filter[data-v-793753] {
   flex-direction: column;
   flex-wrap: wrap;
-}
-.show-content[data-v-793753] {
-  width: 100%;
 }
 .show-expanded[data-v-793753] {
   background-color: lightgrey;
@@ -1265,10 +1265,11 @@ header a {
   padding-top: 2em;
 }
 .sm #theatre-content {
-  padding-top: 0;
+  padding-top: 2em;
 }
 .md #theatre-content {
   align-content: center;
+  padding-top: 4em;
 }
 #theatre-download {
   color: #ff4d0b;
@@ -1493,7 +1494,10 @@ h3[data-v-383e37] {
   padding-top: 8em;
 }
 .sm #film-content[data-v-383e37] {
-  padding-top: 0;
+  padding-top: 8em;
+}
+.md #film-content[data-v-383e37] {
+  padding-top: 8em;
 }
 #film-tag[data-v-383e37] {
   display: flex;
@@ -1604,6 +1608,9 @@ header a {
   flex-direction: row;
   justify-content: space-between;
   text-align: justify;
+  font-size: 1.5em;
+  line-height: 1.85em;
+  font-weight: bold;
 }
 .md #collaborate .collab-content {
   flex-direction: column;
@@ -1646,7 +1653,10 @@ header a {
   font-weight: 100;
 }
 .sm #connect-content {
-  padding-top: 0;
+  padding-top: 2em;
+}
+.md #connect-content {
+  padding-top: 8em;
 }
 
 .collaborate-lists li {
