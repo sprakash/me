@@ -40,7 +40,7 @@
 					    <v-expansion-panel v-for="(entry,i) in myJson['Theatre']"
 							    v-if="entry[sortKey] === showFilter || showFilter === 'All'"
 							    :item="entry"
-					     		:key="i"  v-bind:id="entry.id" :style="{ backgroundImage: `url(${entry.mainpic})`, backgroundRepeat:`no-repeat`, backgroundPosition:'right', backgroundSize: `contain`, borderRadius : `10px` }">
+					     		:key="i"  v-bind:id="entry.id" :style="{ backgroundImage: `url(${entry.mainpic})`, backgroundRepeat:`no-repeat`, backgroundSize: `cover`, borderRadius : `10px` }">
 					      <v-expansion-panel-header>
 					      	<span class="show-info">
 						      	<span class="show-header">
@@ -222,6 +222,10 @@
 		}
 	}
 
+	#shows {
+		padding-top: 3em;
+	}
+
 	.show {
 		&-container {
 			margin: 0 auto;
@@ -248,8 +252,8 @@
 		}
 
 		&-headers {
-			font-size: 0.75em;
-		    color: black;
+			font-size: 1.25em;
+		    color: navajowhite;
 		    width: 100%;
 		    display: flex;
 		    letter-spacing: .1em;
@@ -257,6 +261,7 @@
 		    margin-bottom: 0.5em;
 		    padding: .5em;
 		    justify-content: space-between;
+		    text-transform: uppercase;
 
 		    span {
 		    	width: 50%; 
@@ -284,15 +289,17 @@
 		}
 
 		&-expanded {
-			background-color: white;
+			background-color: lightgrey;
 			border: 1px solid #ff430859;
 			border-top: none;
 
 			&-blurb {
-			    font-size: 1.2em;
-			    line-height: 1.5em;
-			    padding: 1em 0 .5em;
-			    color: black;
+			        font-size: 1.15em;
+				    line-height: 1.5em;
+				    padding: 1em 0 0.5em;
+				    color: black;
+				    text-transform: none;
+				    font-weight: normal;
 			}
 		}
 
@@ -370,7 +377,7 @@
 
 		&-links {
 			text-transform: uppercase;
-		    font-size: .5em;
+		    font-size: .85em;
 		    display: flex;
 		    width: 100%;
 		    justify-content: flex-end;
@@ -387,13 +394,12 @@
 
 		    	a {
 		    		padding: 1em 2em;
-			    	background: #03a9f445;
+			    	background: #12aef58f;
 				    color: #084086;
 				    cursor: pointer;
 				    font-weight: bolder;
 				    border-radius: 7px;
 				    letter-spacing: .15em;
-				    border: 1px solid coral;
 				    text-decoration: none;
 
 		
@@ -441,10 +447,8 @@
 		span {
 			font-weight: bolder;
 		    letter-spacing: .1em;
-		    color: #5352a9;
-		    font-size: .85em;
-		    margin-left: 2em;
-		    margin-top: 1em;
+		    color: navajowhite;
+		    font-size: 1.5em;
 		    text-align: center;
 		}
 		ul {
@@ -457,13 +461,12 @@
 		    flex-direction: row;
 
 			li {
-				background-color: #cff2f980;
-    			color: #484784fa;
-				font-weight: lighter;
+				color: #f899ab;
+				border: 1px solid #f899ab;
+				font-weight: bold;
 				padding: .5em 1em;
 				text-align: center;
-				font-size: .85em;
-    			border: 2px solid #ffeb3b4a;
+				font-size: 1.15em;
 				margin: .25em;
 				cursor: pointer;	
 				letter-spacing: .1em;
@@ -498,18 +501,19 @@
 		}
 
 		ul {
-			font-size: .75em;
+			font-size: 1em;
 		    padding: .5em 1.5em;
 		    color: darkblue;
 		    line-height: 1.5em;
-		    background-color: white;
-		    font-weight: lighter;
+		    background-color: lightgrey;
+		    font-weight: bold;
 		    letter-spacing: .05em;
+		    text-transform: uppercase;
 		}
 	}
 
 	.showActive {
-		border: 2px solid #ff4d0b !important;
+		border: 2px solid #00bcd4 !important;
 	}
 
 	#cootieShots {
@@ -562,10 +566,6 @@
 
 	#ozmaOfOz {
 		background-position: center 20%;
-	}
-
-	#ramleela {
-		background-size: 20% !important;
 	}
 
 

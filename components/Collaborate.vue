@@ -1,15 +1,12 @@
 <template>
-	<div>
+	<div id="collaborate-page">
     <header>
-        <a href="/"><h1><span>S</span>hubhra <span>P</span>rakash</h1></a>
+        <a href="/"><h1><span>शुभ्रा प्रकाश</span></h1></a>
             <Navigation/>
     </header>
 	<section class="slicinItup" id="connect-content"> 
 <section id="connect-title">
-        <h1>Collaborate</h1>
-        <span> 
-        	I have collaborated within the disciplines of Theatre, Filmmaking and Web development. Here are a few recent examples of the kind of work in these areas that I take pride in. 
-        </span>
+        <h1>Recent Collaborations</h1>
 </section>
 <hr/>
 		<section id="collaborate-sections">
@@ -18,22 +15,34 @@
 					<div class="collab">
 						<h2>Theatre</h2>
 						<div class="collab-content">
-						   	<img src="/assets/fake/jfm1.jpg"/>
-						   	<img src="/assets/fake/jfm.jpg"/>
-						   I wrote, directed and staged a children's play for an organization: Just For Myself for their annual show for the organization in March 2020. Just For Myself is a not-for-profit organization that educates children of construction workes and house help, helps them get placed in schools and provides for basic nutrition and counseling.  The organization is based in Gurgaon, Haryana. The founder Mrs. Ranjana Joshi entrusted me with writing a play based on the story of how her organization came to be. The play includes music and movement. I wrote the piece and rehearsed with the children in a park of their community for several weekends to present a stage show. They were coached in performance on stage, voice work and scene improvisation.
+						   <div class="collab-images">
+						  
+						   	<img class="multiple" src="/assets/fake/jfm1.jpg" />
+						   	<img class="multiple" src="/assets/fake/jfm.jpg" />
+
+						   </div>
+						   <div class="collab-text">
+						   	I wrote, directed and staged a children's play for an organization: Just For Myself for their annual show for the organization in March 2020. Just For Myself is a not-for-profit organization that educates children of construction workes and house help, helps them get placed in schools and provides for basic nutrition and counseling.  The organization is based in Gurgaon, Haryana. The founder Mrs. Ranjana Joshi entrusted me with writing a play based on the story of how her organization came to be. The play includes music and movement. I wrote the piece and rehearsed with the children in a park of their community for several weekends to present a stage show. They were coached in performance on stage, voice work and scene improvisation.
+							</div>
 						</div>
 					</div>
 					<div class="collab">
 						<h2>Code</h2>
 						<div class="collab-content">
+							<div class="collab-images">
 								<img src="/assets/fake/halApplogo.jpg"/>
+							</div>
+							<div>
 							Serving as a web developer for Rattapallax's project Hal &amp; Minter. Hal Horowitz is a poet who has had Parkinson's disease over twenty years during this time he has continued to remain a poet. I am creating a web app, HalApp, that allows for people to read Hal’s poems into HTML web voice reactive interface. We want to create this tool to encourage people with Parkinson's disease to read these people that can lead to improvement with their vocalization and speech. [ More information on the project’s website: <a href="http://www.parkinsonspoetry.org" target="_blank">www.parkinsonspoetry.org </a> ]. 
+						    </div>
 						</div>
 					</div>
 					<div class="collab">
 						<h2>Filming / Digital</h2>
 						<div class="collab-content">
-							<img src="/assets/fake/digitalArtExhibition.jpg"/>
+							<div class="collab-images">
+								<img src="/assets/fake/digitalArtExhibition.jpg"/>
+						  	</div>
 							<div>Collaborated with noted Indian language font designed Rajeev Prakash to created a digital art exhibition called "Fontwala, Stone to mobile: what remains ?". I worked on the animation, filming and editing of the assets using Adobe Premiere, After Effects and Photoshop.  I shot the content with a Canon T3i Rebel DSLR. Read more about it <a href="https://sprakash.github.io/portfolio/fontwala.html" target="_blank">here.</a></div>
 						</div>
 					</div>
@@ -74,7 +83,7 @@
 
 					</section>
 
-					<div class="connect-lower">
+					<div class="collaborate-lower">
 							<article>This site has been created by yours truly using Vue framework and The code can be checked out on : <a href="https://github.com/sprakash/me" target="_blank">GitHub</a>.</article>	
 					</div>
 				</div>
@@ -117,10 +126,25 @@ header {
 	width: 100%;
 }
 
+.slicinItup h1 {
+	text-transform: capitalize;
+    margin: 0;
+    font-size: 1.85em;
+    color: black; 
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    padding-top: 1em;
+    text-align: center;
+
+}
 #collaborate {
 		text-transform: none !important;
 		display: flex;
 		flex-direction: column;
+
+		&-sections {
+			padding: 0 2em;
+		}
 
 		.collab {
 			border-bottom: 1px solid lightgrey;
@@ -132,16 +156,55 @@ header {
 				color: #2eaabe !important;
 			}
 
-			img {
-				max-width:40%;
-			}
-
 			&-content {
 				display: flex;
+			    flex-direction: row;
+			    justify-content: space-between;
+			    text-align: justify;
+
+			    .md & {
+			    	flex-direction: column;
+			    }
+
+			    .sm & {
+			    	flex-direction: column;
+			    	margin-bottom: 2em;
+			    }
+			}
+
+			&-images {
+				display: flex;
 				flex-direction: row;
-				align-items: flex-start;
-				flex-wrap: wrap;
-				justify-content: space-around;
+				justify-content: flex-start;
+				width: 100%;
+
+				.md & {
+			    	margin-bottom: 2em;
+			    	justify-content: center;
+			    }
+
+				.sm & {
+			    	margin-bottom: 2em;
+			    	justify-content: center;
+			    }
+
+				img {
+					width: 90%;
+    				object-fit: contain;
+				}
+			}
+
+			&-text {
+				    width: 100%;
+    				margin-left: 3em;
+
+    				.md & {
+    					margin-left: 0;
+    				}
+
+    				.sm & {
+    					margin-left: 0;
+    				}
 			}
 		}
 
@@ -166,10 +229,11 @@ header {
 	&-lists {
 		li {
 			padding: 0.5em;
-	        background-color: #ff3bcc14;
-	        margin: .5em 0;
-	        text-align: left;
-	        font-weight: bold;
+		    background-color: #ff3bcc14;
+		    text-align: left;
+		    font-weight: bold;
+		    border-bottom: 1px solid black;
+		    text-transform: capitalize;
 
 			a { 
 				text-decoration: underline !important;
@@ -179,7 +243,6 @@ header {
 	}
 
 	&-lower {
-		padding-top: 10em;
 		bottom: 0;
 		
 		div {
@@ -188,17 +251,25 @@ header {
     		margin: .5em 0;
 		}
 		article {
-			font-weight: normal;
+			font-weight: bold;
 			padding: 0.5em;
-	    	background-color: #8f3bff63;
-	    	margin: .5em 0;
+	    	text-align: center;
+	    	background: linear-gradient(270deg, #f970b1, #f5d880, #e27f5f, #00c3ff);
+	    	text-transform: none;
 		}
 	}
 }
 
 #reachout {
-	padding-top: 1.5em;
 	font-weight: bold;
+
+	h2 { 
+		background-color: black;
+	    color: white;
+	    padding: 0 .25em;
+	    text-transform: capitalize;
+	    margin: 0;
+	}
 }
 
 .horiz {
@@ -209,6 +280,7 @@ header {
 	    padding: 0;
 	    background: none;
 	    line-height: 1.5em;
+	    border-bottom: none;
 	}
 }
 
@@ -231,7 +303,7 @@ header {
 	}
 
 	 img {
-	 	background-color: #7b897b;
+	 	background-color: #f7a598;
 	 	border-radius: 5px;
 	 	cursor: pointer;
 
@@ -241,5 +313,8 @@ header {
 	 }
 }
 
+.multiple {
+	width: 50% !important;
+}
 	
 </style>

@@ -54041,7 +54041,7 @@ render._withStripped = true
       
       }
     })();
-},{"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\theatregif.gif":[["theatregif.2aac526b.gif","assets/fake/theatregif.gif"],"assets/fake/theatregif.gif"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\vanilla.gif":[["vanilla.79896c57.gif","assets/fake/vanilla.gif"],"assets/fake/vanilla.gif"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\fontwala.gif":[["fontwala.ebfebebd.gif","assets/fake/fontwala.gif"],"assets/fake/fontwala.gif"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Bio.vue":[function(require,module,exports) {
+},{"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Bio.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -54095,7 +54095,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "longbio" }, [
         _c("span", [
           _vm._v(
-            "Welcome to my website. Here you can learn about my work on stage, film and digital medium as a performer, writer and producer.  My goal is to create and devise new work.  I aspire next to create my most ambitious work yet : Fontwala inspired by the story of my uncle’s life as an artist, entreprenuer and visionary of Indian letterforms. Read all about Fontwala. "
+            "Welcome to my website. Here you can learn about my work on stage, film and digital medium as a performer, writer and producer.  My goal is to create and devise new work.  Next, I aspire to create my most ambitious work yet : Fontwala inspired by the story of my uncle’s life as an artist, entreprenuer and visionary of Indian letterforms. Read all about Fontwala. "
           ),
           _c(
             "a",
@@ -54422,7 +54422,8 @@ var _default = {
     };
   },
   mounted: function mounted() {
-    console.log("landing mounted"); //  this.adjustHeight();
+    console.log("landing mounted");
+    document.querySelector("#content-fill").style.height = "100%"; //  this.adjustHeight();
   },
   created: function created() {//  window.addEventListener('resize', this.adjustHeight);
   },
@@ -54724,7 +54725,7 @@ exports.default = _default;
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
+  return _c("div", { attrs: { id: "digital-page" } }, [
     _c("header", [_vm._m(0), _vm._v(" "), _c("Navigation")], 1),
     _vm._v(" "),
     _vm._m(1)
@@ -54736,12 +54737,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("a", { attrs: { href: "/" } }, [
-      _c("h1", [
-        _c("span", [_vm._v("S")]),
-        _vm._v("hubhra "),
-        _c("span", [_vm._v("P")]),
-        _vm._v("rakash")
-      ])
+      _c("h1", [_c("span", [_vm._v("शुभ्रा प्रकाश")])])
     ])
   },
   function() {
@@ -54753,19 +54749,29 @@ var staticRenderFns = [
       { staticClass: "slicinItup", attrs: { id: "digital-content" } },
       [
         _c("section", { attrs: { id: "digital-title" } }, [
-          _c("h1", [_vm._v("Digital / Intersect")]),
-          _vm._v(" "),
           _c("span", [
             _vm._v(
-              "\nhere are projects I've worked on that lie at intersection of filmmaking, digital and design, "
+              '\n"a meaningful life is less about finding your ‘real’ self than expanding its boundaries." '
             ),
-            _c("strong", [
-              _vm._v("click on each section to learn more about the project.")
-            ])
+            _c(
+              "a",
+              {
+                attrs: {
+                  href:
+                    "https://aeon.co/ideas/which-is-more-fundamental-processes-or-things",
+                  target: "_blank"
+                }
+              },
+              [_vm._v("(from)")]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", [
+            _vm._v(
+              "\n \tExpanding my boundaries is central to my undertaking of any creative work, here are projects which gave me an opportunity to bring together my different skills sets. Exploring performance in the context of technology and vice versa are areas of interest for me. You can click on each project below to find more details.\n"
+            )
           ])
         ]),
-        _vm._v(" "),
-        _c("hr"),
         _vm._v(" "),
         _c("section", { attrs: { id: "digital-groups" } }, [
           _c("section", { staticClass: "digital-groups" }, [
@@ -55601,8 +55607,7 @@ exports.default = _default;
                         style: {
                           backgroundImage: "url(" + entry.mainpic + ")",
                           backgroundRepeat: "no-repeat",
-                          backgroundPosition: "right",
-                          backgroundSize: "contain",
+                          backgroundSize: "cover",
                           borderRadius: "10px"
                         },
                         attrs: { item: entry, id: entry.id }
@@ -56015,8 +56020,6 @@ exports.default = _default;
     _c("header", [_vm._m(0), _vm._v(" "), _c("Navigation")], 1),
     _vm._v(" "),
     _c("section", { attrs: { id: "theatre-content" } }, [
-      _vm._m(1),
-      _vm._v(" "),
       _c("div", { attrs: { id: "content-theatre" } }, [
         _c(
           "section",
@@ -56043,26 +56046,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("a", { attrs: { href: "/" } }, [
-      _c("h1", [
-        _c("span", [_vm._v("S")]),
-        _vm._v("hubhra "),
-        _c("span", [_vm._v("P")]),
-        _vm._v("rakash")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "slicinItup" }, [
-      _c("h1", [_vm._v("Theatre")]),
-      _vm._v(
-        "\n    Here you can have a look at my work on stage, read blogs I've written about my experience with each show, check out gallery of photos and media based on shows and get an idea of my training and skill set.             "
-      ),
-      _c("span", { attrs: { id: "theatre-download" } }, [
-        _vm._v("Click to Download Printable Version")
-      ])
+      _c("h1", [_c("span", [_vm._v("शुभ्रा प्रकाश")])])
     ])
   }
 ]
@@ -56200,18 +56184,75 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default = {
   name: 'Film',
   components: {
     Navigation: _Navigation.default
   },
-  created: function created() {
-    this.msg = this.$route.params.isSlideshow;
-  },
   data: function data() {
     return {
       msg: 'Welcome to the film section'
     };
+  },
+  created: function created() {
+    this.msg = this.$route.params.isSlideshow;
+  },
+  mounted: function mounted() {},
+  methods: {// playButtonPlacement : function() {
+    // 	//give play button .089 of width and .16 of height; 
+    // 	//get top position of image.
+    // 	//get left position of image.
+    // 	//get width of image.
+    // 	//get height of image. 
+    // 	//add half of width to left  - width of icon = new left position. 
+    // 	//add half of height to top - height of icon = new top position. 
+    // 	var imgWidthFirst = document.getElementById('vanillaImg').clientWidth ; 
+    // 	// var imgHeight = document.querySelector('.films-look').clientHeight ; 
+    // 	console.log('widt HOW CAN THIS BE' + imgWidthFirst);
+    // 	var iconWidth = imgWidthFirst * .089; 
+    // 	var iconHeight = imgHeight * .16;
+    // 	document.querySelector('.playicon').width = iconWidth;
+    // 	document.querySelector('.playicon').height = iconHeight;
+    // 	console.log("new width " + iconWidth +  " new height " +iconHeight);
+    // 	var topPos = document.querySelector('.films-look').offsetTop;
+    // 	var leftPos = document.querySelector('.films-look').offsetLeft;
+    // 	var newLeft = (imgWidthFirst/2) - iconWidth;
+    // 	var newTop = (imgHeight/2) - iconHeight;
+    // 	document.querySelector('.playicon').style.top = newTop;
+    // 	document.querySelector('.playicon').style.left = newLeft;
+    // 	console.log(newTop + " top " + newLeft);
+    //}
   }
 };
 exports.default = _default;
@@ -56227,7 +56268,7 @@ exports.default = _default;
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
+  return _c("div", { attrs: { id: "film-page" } }, [
     _c("header", [_vm._m(0), _vm._v(" "), _c("Navigation")], 1),
     _vm._v(" "),
     _vm._m(1)
@@ -56239,12 +56280,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("a", { attrs: { href: "/" } }, [
-      _c("h1", [
-        _c("span", [_vm._v("S")]),
-        _vm._v("hubhra "),
-        _c("span", [_vm._v("P")]),
-        _vm._v("rakash")
-      ])
+      _c("h1", [_c("span", [_vm._v("शुभ्रा प्रकाश")])])
     ])
   },
   function() {
@@ -56256,8 +56292,6 @@ var staticRenderFns = [
       { staticClass: "slicinItup", attrs: { id: "film-content" } },
       [
         _c("section", { attrs: { id: "film-title" } }, [
-          _c("h1", [_vm._v("Film")]),
-          _vm._v(" "),
           _c("div", { attrs: { id: "film-tag" } }, [
             _c(
               "a",
@@ -56270,7 +56304,7 @@ var staticRenderFns = [
               [
                 _c("img", {
                   staticClass: "foxlogo",
-                  attrs: { src: "/randomfoxlogo.42505791.png" }
+                  attrs: { src: "/rflogo.f8a67f48.png" }
                 })
               ]
             ),
@@ -56296,14 +56330,10 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("section", { staticClass: "films-group", attrs: { id: "films" } }, [
-          _c("div", [
+          _c("div", { staticClass: "films-look" }, [
             _c("h2", [_vm._v("Actor & Co-Producer")]),
             _vm._v(" "),
             _c("h3", [_vm._v("Vanilla")]),
-            _vm._v(" "),
-            _c("img", {
-              attrs: { src: "/vanilla.00c394b1.jpg" }
-            }),
             _vm._v(" "),
             _c(
               "a",
@@ -56314,7 +56344,15 @@ var staticRenderFns = [
                   target: "_blank"
                 }
               },
-              [_vm._v("[watch here]")]
+              [
+                _c("div", { staticClass: "overlay-parent" }, [
+                  _c("div", { staticClass: "overlay-content" }, [
+                    _c("img", {
+                      attrs: { src: "/vanilla.00c394b1.jpg" }
+                    })
+                  ])
+                ])
+              ]
             ),
             _vm._v(" "),
             _c("div", { staticClass: "descript" }, [
@@ -56329,10 +56367,6 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("h3", [_vm._v("Funny Faces")]),
             _vm._v(" "),
-            _c("img", {
-              attrs: { src: "/funnyfaces.544a1b33.png" }
-            }),
-            _vm._v(" "),
             _c(
               "a",
               {
@@ -56342,7 +56376,15 @@ var staticRenderFns = [
                   target: "_blank"
                 }
               },
-              [_vm._v("[watch here]")]
+              [
+                _c("div", { staticClass: "overlay-parent" }, [
+                  _c("div", { staticClass: "overlay-content" }, [
+                    _c("img", {
+                      attrs: { src: "/funnyfaces.544a1b33.png" }
+                    })
+                  ])
+                ])
+              ]
             ),
             _vm._v(" "),
             _c("div", { staticClass: "descript" }, [
@@ -56369,17 +56411,21 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("h3", [_vm._v("Three Dates")]),
             _vm._v(" "),
-            _c("img", {
-              attrs: { src: "/gotchai.692cc71e.png" }
-            }),
-            _vm._v(" "),
             _c(
               "a",
               {
                 staticClass: "films-watch",
                 attrs: { href: "https://vimeo.com/65866310", target: "_blank" }
               },
-              [_vm._v("[watch here]")]
+              [
+                _c("div", { staticClass: "overlay-parent" }, [
+                  _c("div", { staticClass: "overlay-content" }, [
+                    _c("img", {
+                      attrs: { src: "/gotchai.692cc71e.png" }
+                    })
+                  ])
+                ])
+              ]
             ),
             _vm._v(" "),
             _c("div", { staticClass: "descript" }, [
@@ -56403,10 +56449,6 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("h4", [_vm._v("augmented reality comic book")]),
               _vm._v(" "),
-              _c("img", {
-                attrs: { src: "/priyasmirror.2119e84a.png" }
-              }),
-              _vm._v(" "),
               _c(
                 "a",
                 {
@@ -56416,10 +56458,15 @@ var staticRenderFns = [
                     target: "_blank"
                   }
                 },
-                [_vm._v("[read]")]
+                [
+                  _c("img", {
+                    attrs: { src: "/priyasmirror.2119e84a.png" }
+                  })
+                ]
               ),
               _vm._v(" "),
               _c("div", { staticClass: "descript" }, [
+                _c("div", [_vm._v("[click on image to read the comic]")]),
                 _vm._v(
                   "\n\t\t\t\t\t Translated the English comic book into Hindi.  In Priya's mirror, Priya joins forces with a group of acid attack survivors as they fight against the demon-king, Ahankar, and his tyrannical hold on them. Funded by the World Bank, the next edition titled, PRIYA’S MIRROR, focuses on acid attacks and tackles the problem of gender violence around the world. The comic book was created by and features acid attack survivors from New York City, Bogota, and New Delhi. PRIYA’S MIRROR premiered at the New York Film Festival, at Film Society of Lincoln Center, NYC from September 30 to October 16, 2016 and at the Mumbai Comic Con, Oct 22-23, 2016.\n\t\t\t\t"
                 )
@@ -56431,20 +56478,25 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("h4", [_vm._v("netflix / amazon video / itunes")]),
               _vm._v(" "),
-              _c("img", {
-                attrs: { src: "/karmak.bebe07d1.jpeg" }
-              }),
-              _vm._v(" "),
               _c(
                 "a",
                 {
                   staticClass: "films-watch",
+                  staticStyle: { width: "100%" },
                   attrs: {
                     href: "https://www.karmakillings.com/",
                     target: "_blank"
                   }
                 },
-                [_vm._v("[watch]")]
+                [
+                  _c("div", { staticClass: "overlay-parent" }, [
+                    _c("div", { staticClass: "overlay-content" }, [
+                      _c("img", {
+                        attrs: { src: "/karmak.bebe07d1.jpeg" }
+                      })
+                    ])
+                  ])
+                ]
               ),
               _vm._v(" "),
               _c("div", { staticClass: "descript" }, [
@@ -56459,10 +56511,6 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("h4", [_vm._v("short documentary")]),
               _vm._v(" "),
-              _c("img", {
-                attrs: { src: "/vamp.c1fb0973.png" }
-              }),
-              _vm._v(" "),
               _c(
                 "a",
                 {
@@ -56472,7 +56520,15 @@ var staticRenderFns = [
                     target: "_blank"
                   }
                 },
-                [_vm._v("[watch]")]
+                [
+                  _c("div", { staticClass: "overlay-parent" }, [
+                    _c("div", { staticClass: "overlay-content" }, [
+                      _c("img", {
+                        attrs: { src: "/vamp.c1fb0973.png" }
+                      })
+                    ])
+                  ])
+                ]
               ),
               _vm._v(" "),
               _c("div", { staticClass: "descript" }, [
@@ -56523,7 +56579,7 @@ render._withStripped = true
       
       }
     })();
-},{"./Navigation":"components/Navigation.vue","C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\randomfoxlogo.png":[["randomfoxlogo.42505791.png","assets/fake/randomfoxlogo.png"],"assets/fake/randomfoxlogo.png"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\vanilla.jpg":[["vanilla.00c394b1.jpg","assets/fake/vanilla.jpg"],"assets/fake/vanilla.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\funnyfaces.png":[["funnyfaces.544a1b33.png","assets/fake/funnyfaces.png"],"assets/fake/funnyfaces.png"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\gotchai.png":[["gotchai.692cc71e.png","assets/fake/gotchai.png"],"assets/fake/gotchai.png"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\priyasmirror.png":[["priyasmirror.2119e84a.png","assets/fake/priyasmirror.png"],"assets/fake/priyasmirror.png"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\karmak.jpeg":[["karmak.bebe07d1.jpeg","assets/fake/karmak.jpeg"],"assets/fake/karmak.jpeg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\vamp.png":[["vamp.c1fb0973.png","assets/fake/vamp.png"],"assets/fake/vamp.png"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Collaborate.vue":[function(require,module,exports) {
+},{"./Navigation":"components/Navigation.vue","C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\rflogo.png":[["rflogo.f8a67f48.png","assets/fake/rflogo.png"],"assets/fake/rflogo.png"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\vanilla.jpg":[["vanilla.00c394b1.jpg","assets/fake/vanilla.jpg"],"assets/fake/vanilla.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\funnyfaces.png":[["funnyfaces.544a1b33.png","assets/fake/funnyfaces.png"],"assets/fake/funnyfaces.png"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\gotchai.png":[["gotchai.692cc71e.png","assets/fake/gotchai.png"],"assets/fake/gotchai.png"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\priyasmirror.png":[["priyasmirror.2119e84a.png","assets/fake/priyasmirror.png"],"assets/fake/priyasmirror.png"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\karmak.jpeg":[["karmak.bebe07d1.jpeg","assets/fake/karmak.jpeg"],"assets/fake/karmak.jpeg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\vamp.png":[["vamp.c1fb0973.png","assets/fake/vamp.png"],"assets/fake/vamp.png"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\icons\\play.svg":[["play.3e065c7c.svg","assets/icons/play.svg"],"assets/icons/play.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\icons\\read.svg":[["read.457a31d8.svg","assets/icons/read.svg"],"assets/icons/read.svg"],"vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Collaborate.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -56535,6 +56591,15 @@ var _Navigation = _interopRequireDefault(require("./Navigation"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -56648,7 +56713,7 @@ exports.default = _default;
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
+  return _c("div", { attrs: { id: "collaborate-page" } }, [
     _c("header", [_vm._m(0), _vm._v(" "), _c("Navigation")], 1),
     _vm._v(" "),
     _vm._m(1)
@@ -56660,12 +56725,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("a", { attrs: { href: "/" } }, [
-      _c("h1", [
-        _c("span", [_vm._v("S")]),
-        _vm._v("hubhra "),
-        _c("span", [_vm._v("P")]),
-        _vm._v("rakash")
-      ])
+      _c("h1", [_c("span", [_vm._v("शुभ्रा प्रकाश")])])
     ])
   },
   function() {
@@ -56677,13 +56737,7 @@ var staticRenderFns = [
       { staticClass: "slicinItup", attrs: { id: "connect-content" } },
       [
         _c("section", { attrs: { id: "connect-title" } }, [
-          _c("h1", [_vm._v("Collaborate")]),
-          _vm._v(" "),
-          _c("span", [
-            _vm._v(
-              " \n        \tI have collaborated within the disciplines of Theatre, Filmmaking and Web development. Here are a few recent examples of the kind of work in these areas that I take pride in. \n        "
-            )
-          ])
+          _c("h1", [_vm._v("Recent Collaborations")])
         ]),
         _vm._v(" "),
         _c("hr"),
@@ -56695,16 +56749,23 @@ var staticRenderFns = [
                 _c("h2", [_vm._v("Theatre")]),
                 _vm._v(" "),
                 _c("div", { staticClass: "collab-content" }, [
-                  _c("img", {
-                    attrs: { src: "/jfm1.6aef3d74.jpg" }
-                  }),
+                  _c("div", { staticClass: "collab-images" }, [
+                    _c("img", {
+                      staticClass: "multiple",
+                      attrs: { src: "/jfm1.6aef3d74.jpg" }
+                    }),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "multiple",
+                      attrs: { src: "/jfm.4354f255.jpg" }
+                    })
+                  ]),
                   _vm._v(" "),
-                  _c("img", {
-                    attrs: { src: "/jfm.4354f255.jpg" }
-                  }),
-                  _vm._v(
-                    "\n\t\t\t\t\t\t   I wrote, directed and staged a children's play for an organization: Just For Myself for their annual show for the organization in March 2020. Just For Myself is a not-for-profit organization that educates children of construction workes and house help, helps them get placed in schools and provides for basic nutrition and counseling.  The organization is based in Gurgaon, Haryana. The founder Mrs. Ranjana Joshi entrusted me with writing a play based on the story of how her organization came to be. The play includes music and movement. I wrote the piece and rehearsed with the children in a park of their community for several weekends to present a stage show. They were coached in performance on stage, voice work and scene improvisation.\n\t\t\t\t\t\t"
-                  )
+                  _c("div", { staticClass: "collab-text" }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t   \tI wrote, directed and staged a children's play for an organization: Just For Myself for their annual show for the organization in March 2020. Just For Myself is a not-for-profit organization that educates children of construction workes and house help, helps them get placed in schools and provides for basic nutrition and counseling.  The organization is based in Gurgaon, Haryana. The founder Mrs. Ranjana Joshi entrusted me with writing a play based on the story of how her organization came to be. The play includes music and movement. I wrote the piece and rehearsed with the children in a park of their community for several weekends to present a stage show. They were coached in performance on stage, voice work and scene improvisation.\n\t\t\t\t\t\t\t"
+                    )
+                  ])
                 ])
               ]),
               _vm._v(" "),
@@ -56712,23 +56773,28 @@ var staticRenderFns = [
                 _c("h2", [_vm._v("Code")]),
                 _vm._v(" "),
                 _c("div", { staticClass: "collab-content" }, [
-                  _c("img", {
-                    attrs: { src: "/halApplogo.289e6474.jpg" }
-                  }),
-                  _vm._v(
-                    "\n\t\t\t\t\t\t\tServing as a web developer for Rattapallax's project Hal & Minter. Hal Horowitz is a poet who has had Parkinson's disease over twenty years during this time he has continued to remain a poet. I am creating a web app, HalApp, that allows for people to read Hal’s poems into HTML web voice reactive interface. We want to create this tool to encourage people with Parkinson's disease to read these people that can lead to improvement with their vocalization and speech. [ More information on the project’s website: "
-                  ),
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "http://www.parkinsonspoetry.org",
-                        target: "_blank"
-                      }
-                    },
-                    [_vm._v("www.parkinsonspoetry.org ")]
-                  ),
-                  _vm._v(" ]. \n\t\t\t\t\t\t")
+                  _c("div", { staticClass: "collab-images" }, [
+                    _c("img", {
+                      attrs: { src: "/halApplogo.289e6474.jpg" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\tServing as a web developer for Rattapallax's project Hal & Minter. Hal Horowitz is a poet who has had Parkinson's disease over twenty years during this time he has continued to remain a poet. I am creating a web app, HalApp, that allows for people to read Hal’s poems into HTML web voice reactive interface. We want to create this tool to encourage people with Parkinson's disease to read these people that can lead to improvement with their vocalization and speech. [ More information on the project’s website: "
+                    ),
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          href: "http://www.parkinsonspoetry.org",
+                          target: "_blank"
+                        }
+                      },
+                      [_vm._v("www.parkinsonspoetry.org ")]
+                    ),
+                    _vm._v(" ]. \n\t\t\t\t\t\t    ")
+                  ])
                 ])
               ]),
               _vm._v(" "),
@@ -56736,9 +56802,11 @@ var staticRenderFns = [
                 _c("h2", [_vm._v("Filming / Digital")]),
                 _vm._v(" "),
                 _c("div", { staticClass: "collab-content" }, [
-                  _c("img", {
-                    attrs: { src: "/digitalArtExhibition.631be12b.jpg" }
-                  }),
+                  _c("div", { staticClass: "collab-images" }, [
+                    _c("img", {
+                      attrs: { src: "/digitalArtExhibition.631be12b.jpg" }
+                    })
+                  ]),
                   _vm._v(" "),
                   _c("div", [
                     _vm._v(
@@ -56931,7 +56999,7 @@ var staticRenderFns = [
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "connect-lower" }, [
+            _c("div", { staticClass: "collaborate-lower" }, [
               _c("article", [
                 _vm._v(
                   "This site has been created by yours truly using Vue framework and The code can be checked out on : "
@@ -57101,7 +57169,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60985" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50364" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -52,17 +52,21 @@
 	    align-items: center;
 	    justify-content: space-between;
 	    text-transform: uppercase;
-	    background: #00b1ff24;
+	    background: black;
 	    font-weight: bolder;
 	   	padding: 0 1.5em;
 
+	   	h1 {
+	   		color: #25c5f7;
+	   	}
+
 
 		span {
-			color: deeppink;
+			color: #fabc84;
 		}
 
 		a {
-			color: deepskyblue;
+			color: #a1dcef;
 		}
 	}
 
@@ -133,7 +137,7 @@
 		 	img {
 		 		width: 2em;
 		 		height: 2em;
-		 		background-color: #ffc10757;
+		 		background-color: #f899ab;
 
 		 	}
 

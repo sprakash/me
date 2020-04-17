@@ -73,7 +73,7 @@
 	
 	header {
 		flex-grow: 1;
-		opacity: .9;
+		opacity: 1;
 
 		.sm & {
 			align-items: center;
@@ -94,6 +94,10 @@
 	nav {
 		margin: 0 2em;
 
+		.sm & {
+			margin: 0;
+		}
+
 		ul {
 			display: flex;
 			list-style-type: none;
@@ -107,7 +111,7 @@
 					font-size: 1.15em;
 
 					&:hover {
-						color: yellow !important;
+						color: navajowhite !important;
 					}
 				}
 			 }
@@ -177,14 +181,23 @@
 				border: 3px solid;
     			border-image-source: linear-gradient(to left, #E91E63, #FF9800);
     			border-image-slice: 1;
+
+    			#landing & {
+    				font-size: 2.5em;
+    			}
+
+    			#collaborate-page &,
+    			#digital-page &, 
+    			#film-page &,
+    			#theatre-page & {
+    				font-size: 2em;
+    			}
 			}
 		}
 
 		.sm & {
-			display: block;
-			position: absolute;
-		    right: 0px;
-		    top: 3px;
+			display: flex;
+    		justify-content: flex-end;
 		}
 
 		.md & {
@@ -204,19 +217,23 @@
 		    flex-direction: column;
 
 		     li {
-		     	margin: .1em 0;
-				background: linear-gradient(270deg, #f970b1, #ddd255, #e76339, #00c3ff);
-				/** background: linear-gradient(270deg, #f970b1, #e67a83, #7dd2ec); */
-				padding: .85em 0;
-				display:block;
-				border: 5px solid #eaeae4e8;
+		     	margin: 0.05em 0;
+    			background: #000000c9;
+			    padding: 0.85em 0;
+			    display: block;
+			    border-bottom: 1px solid black;
+			    font-size: 1.25em;
+			    border-image-source: linear-gradient(270deg, #ff0079, #ffc410, #df420f, #01bffa);
+    			border-image-slice: 1;
 
 				&:first-child {
+					padding: 0.5em;
+					margin: 0;
 
 					a {
 						display: block;
 					    text-align: right;
-						font-size: 2em;
+						font-size: 1.5em;
 				    	margin-right: 1em;
 					}
 				}

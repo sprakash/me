@@ -49,7 +49,7 @@
 	}
 	body {
 		background-color: black;
-		font-family: Roboto, Helvetica, Arial, sans-serif;
+		font-family: 'Cambria';
 		min-height: 100vh;
 		display: flex;
 		flex-direction: row;
@@ -98,7 +98,7 @@
 		justify-content: space-between;
 		color: #24020a;
 		border-top: 1px solid darkgrey;
-		background: linear-gradient(270deg, #f970b1, #ffc1077d, #ff4b1296, #00c3ff);
+		background: linear-gradient(270deg, #f970b1, #f5d880, #e27f5f, #00c3ff);
 		background-size: 100% 100%;
 		color: #39053f;
 		align-items: center;
@@ -154,12 +154,16 @@
 		a {
 			color: white !important;
     		font-weight: bold;
-    		font-size: 1.85em;
+
+    		#landing & {
+    			margin-top: 2em;
+    		}
 		}
 	}
 
 	.router-link-exact-active{
 			color: #f4ff42 !important;
+			font-size: 1.5em;
 	}
 
 

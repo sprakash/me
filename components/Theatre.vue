@@ -1,14 +1,14 @@
 <template>
 	<div id="theatre-page">
     <header>
-        <a href="/"><h1><span>S</span>hubhra <span>P</span>rakash</h1></a>
+       <!--  <a href="/"><h1><span>S</span>hubhra <span>P</span>rakash</h1></a>
+ -->
+        <a href="/"><h1><span>शुभ्रा प्रकाश</span></h1></a>
 
             <Navigation/>
     </header>
     <section id="theatre-content">
-	<span  class="slicinItup"> 
-        <h1>Theatre</h1>
-    Here you can have a look at my work on stage, read blogs I've written about my experience with each show, check out gallery of photos and media based on shows and get an idea of my training and skill set.             <span id="theatre-download">Click to Download Printable Version</span> </span>
+        
 
 
 <!-- 	<ul class="twoviews">
@@ -66,6 +66,12 @@
 	}
 </script>
 <style lang="scss">
+
+h1 {
+    span {
+        font-weight: lighter;
+    }
+}
 header {
     a {
         text-decoration: none;
@@ -81,11 +87,24 @@ header {
     width: 100% !important;
 }
 
+#content-theatre {
+    margin-top: 2em;
+    background-color: black;
+
+    .sm & {
+        margin-top : 0;
+    }
+}
+
 #theatre {
 
     &-content {
         
         padding-top: 2em;
+
+        .sm & {
+            padding-top: 0;
+        }
 
         .md & {
             align-content  : center;
@@ -99,6 +118,7 @@ header {
         font-size: .85em;
         cursor: pointer;
     }
+
 }
 
 header {
@@ -196,7 +216,14 @@ input[type="radio"] {
     }
 
     li {
-        border-bottom: 1px solid;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2em;
+            line-height: 1.85em;
+            border: 1px solid white;
+            padding: 1em;
+            font-weight: bold;
 
         .md & {
             padding: 1em 0 1em 1em;
@@ -206,13 +233,9 @@ input[type="radio"] {
 
         a {
             font-weight: bold;
-            color: #ff4d0b !important;
+            color: #78B9E8 !important;
         }
     }
-}
-
-.skills {
-    margin-top: 2em;
 }
 
 .skillsList {
@@ -230,13 +253,14 @@ input[type="radio"] {
 
 #trainingSkills h1,
 .skills h1 {
-    font-size: .85em;
+    font-size: 1.5em;
     margin-left: 0;
     width: 95%;
-    background-color: #7ed1eb47;
     padding: .25em 1em;
     line-height: 2em;
     letter-spacing: .15em;
+    color: navajowhite;
+    text-align: center;
 
     .sm &,
     .md & {
@@ -244,5 +268,6 @@ input[type="radio"] {
         width: 100%;
     }
 }
+
 
 </style>

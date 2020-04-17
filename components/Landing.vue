@@ -45,6 +45,7 @@
 		},
         mounted: function () {
             console.log("landing mounted");
+            document.querySelector("#content-fill").style.height="100%";
           //  this.adjustHeight();
         },
         created: function() {       
@@ -53,6 +54,7 @@
         destroyed() {
           // window.removeEventListener("resize", this.adjustHeight);
         },
+
         methods : {
             adjustHeight: function() {
 
@@ -164,5 +166,7 @@ header {
         z-index: 0;
     }
 }
+
+
 </style>
 

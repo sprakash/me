@@ -152,7 +152,7 @@
     	}
 	}
 	.panel-container {
-		font-family: 'Palatino';
+		font-family: 'Cambria';
 	}
 
 	.panel-area {
@@ -182,6 +182,8 @@
 	}
 	
 	.single-panel  {
+
+		background-color: black;
 
 		.md & {
 			padding: 0;
@@ -227,7 +229,7 @@
 	.panel-content {
 		padding: 2em;
 	    line-height: 2em;
-	    font-family: Helvetica;
+	    font-family: Cambria;
 	    font-size: 1em;
 	    color: #ecda4c;
 	    letter-spacing: .2em;
@@ -275,17 +277,17 @@
 
 	#theatre-area
 	.panel-content {
-		background-color: rgba(109, 0, 42, 0.9);
+		background-color: rgba(11, 0, 109, 0.82);
 	}
 
 	#film-area
 	.panel-content {
-		background-color: rgba(11, 0, 109, 0.9);
+		background-color: rgba(167, 40, 0, 0.86);
 	}
 
 	#digital-area
 	.panel-content {
-		background-color: rgba(57, 109, 0,  0.9);
+		background-color: rgba(206, 15, 80, 0.93);
 	}
 
 	.button-areas {
@@ -367,7 +369,7 @@
 
 
 	#theatre-area{
-		background-image: url('/assets/fake/theatregif.gif');
+		background-image: url('https://raw.githubusercontent.com/sprakash/self/master/theatregif.2aac526b.gif');
 	    background-repeat: no-repeat;
 	    background-position: -123px 0;
     	background-size: cover;
@@ -398,7 +400,7 @@
 	}
 
 	#film-area{
-		background-image: url('/assets/fake/vanilla.gif');
+		background-image: url('https://raw.githubusercontent.com/sprakash/self/master/vanilla.79896c57.gif');
 	    background-repeat: no-repeat;
 	    background-size: cover;
 	    background-position: center;
@@ -425,7 +427,7 @@
 	}
 
 	#digital-area {
-		background-image: url('/assets/fake/fontwala.gif');
+		background-image: url('https://raw.githubusercontent.com/sprakash/self/master/fontwala.ebfebebd.gif');
 		background-repeat: no-repeat;
     	background-size: cover;
 

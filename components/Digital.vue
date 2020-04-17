@@ -1,19 +1,19 @@
 <template>
-	<div>
+	<div id="digital-page">
     <header>
-        <a href="/"><h1><span>S</span>hubhra <span>P</span>rakash</h1></a>
+        <a href="/"><h1><span>शुभ्रा प्रकाश</span></h1></a>
             <Navigation/>
     </header>
 
 	<section class="slicinItup" id="digital-content"> 
-<section id="digital-title">
-        <h1>Digital / Intersect</h1>
-        
+<section id="digital-title">        
  <span>
-here are projects I've worked on that lie at intersection of filmmaking, digital and design, <strong>click on each section to learn more about the project.</strong>
+"a meaningful life is less about finding your ‘real’ self than expanding its boundaries." <a href="https://aeon.co/ideas/which-is-more-fundamental-processes-or-things" target="_blank">(from)</a>
+</span>
+<div>
+ 	Expanding my boundaries is central to my undertaking of any creative work, here are projects which gave me an opportunity to bring together my different skills sets. Exploring performance in the context of technology and vice versa are areas of interest for me. You can click on each project below to find more details.
+</div>
 </section>
-
-<hr/>
 	<section id="digital-groups">
 		<section class="digital-groups">
 			<div>
@@ -98,29 +98,31 @@ h3 {
     text-transform: capitalize;
     margin: 0;
     padding: .5em 0;
-    font-size: 2em;
+    font-size: 1.75em;
     background-color: black;
-    border: 1px solid #3ff33f;
-    font-family: monospace;
+    font-family: "Cambria";
     line-height: 1.25em;
 
 	span {
 		color: white;
 	    text-transform: lowercase;
-	    font-size: .85em;
+	    font-size: .75em;
 	    display: block;
-	    line-height: 1.25em;
+	    line-height: 1.75em;
+	    border-top: 1px solid white;
+    	margin: 1em 0 0;
+    	padding: 1em 0 0;
 	}
 
 	a {
 		text-transform : lowercase;
 		text-decoration: none;
 		color: #72ff00c7;
+		display: none;
 	}
 
 	&:hover {
 		cursor: pointer; 
-		background-color: #2a1ee9;
 	}
 }
 
@@ -153,6 +155,10 @@ h3 {
 		 	width: 50%;
 		 	text-align: center;
 		 	margin: 1em;
+
+		 	.sm & {
+		 		margin: 0;
+		 	}
 
 		 	.sm &,
 		 	.md & {
@@ -204,10 +210,38 @@ h3 {
 
 	&-content {
 		padding-top: 4em;
+
+		.sm & {
+			padding-top: 0;
+		}
 	}
 
 	&-title {
-		padding-bottom: 1.5em;
+		padding: 2em 0 0;
+	    display: flex;
+	    flex-direction: column;
+	    font-family: "Cambria";
+
+		span {
+			text-align: center;
+		    font-size: 1.25em;
+		    font-style: italic;
+		    font-weight: bold;
+		}
+
+		div {
+			padding: 1em 1em 0 1em;
+		    font-size: 1.25em;
+		    letter-spacing: .025em;
+		    text-transform: none;
+		    text-align: justify;
+    		width: 85%;
+    		margin: 0 auto;
+
+    		.sm & {
+    			padding-bottom: 1em;
+    		}
+		}
 	}
 
 	&-tag {
