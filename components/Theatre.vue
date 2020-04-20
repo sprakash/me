@@ -196,6 +196,17 @@ input[type="radio"] {
 
 }
 
+.training-link {
+    text-align: center;
+    letter-spacing: .25em;
+    font-family: Cambria;
+    color: #5aa8bf;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
 #trainingSkills { 
     margin: 1.25em 2em;
 

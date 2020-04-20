@@ -70,6 +70,8 @@
 											  <a href="https://github.com/sprakash/sh00bz-web-home" target="_blank"><img src="/assets/icons/github.svg"></a>
 										</span>
 									</span>
+
+									<span>&vert;&nbsp;Subscribe to the blog <a href="http://shubhraprakash.blogspot.com/" target="_blank"/>here</a></span>
 							</li>
 							<li class="horiz"><span>Download :  </span>
 									<ul>

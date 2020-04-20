@@ -43,30 +43,33 @@
 				</tr>
 			</table> -->
 
-			 
+			 	<a href="#trainingSkills" class="training-link">see training and skills information</a>
 				<div class="show-content">
 					<div class="show-headers">
 						<span>SHOWS / PLAYS / PERFORMANCES </span>
 
 						<span class="show-instruction">click title to learn more about each show</span>
 					</div>
-					 <v-expansion-panels accordion multiple>
+					 <v-expansion-panels accordion multiple focusable>
+
+					 	<!-- :style="{ backgroundImage: `url(${entry.mainpic})`, backgroundRepeat:`no-repeat`, backgroundSize: `cover`, borderRadius : `10px` }" -->
+
 					    <v-expansion-panel v-for="(entry,i) in myJson['Theatre']"
 							    v-if="entry[sortKey] === showFilter || showFilter === 'All'"
 							    :item="entry"
-					     		:key="i"  v-bind:id="entry.id" :style="{ backgroundImage: `url(${entry.mainpic})`, backgroundRepeat:`no-repeat`, backgroundSize: `cover`, borderRadius : `10px` }">
+					     		:key="i"  v-bind:id="entry.id"  :style="{ backgroundImage: `url(${entry.mainpic})`, backgroundRepeat:`no-repeat`, backgroundSize: `contain`, backgroundPosition: `center right`, borderRadius : `10px` }">
 					      <v-expansion-panel-header>
 					      	<span class="show-info">
-						      	<span class="show-header">
+						      	 <div class="show-header">
 							      	<span class="show-name">{{entry.name}}</span> 
 							      	<span class="show-details">
 							      	<span class="show-role"> Role : {{entry.role}} </span><span class="show-location">{{entry.location}}</span>
 							      	<span class="show-year">{{entry.year}} </span>	
-							       </span>
+							       </div>
 							     </span>
-							 <!-- <span class="show-mainImage">
-						       <img class="show-mainImage-src" :src="entry.mainpic"/>
-						     </span> -->
+								<!--  <div class="show-mainImage">
+							       <img class="show-mainImage-src" :src="entry.mainpic"/>
+							     </div> -->
        					     </span>
 
 					      </v-expansion-panel-header>
@@ -237,7 +240,6 @@
 			display:flex;
 			flex-direction: row;
 			justify-content: space-between;
-			background-color: #ffffffb0;
     		padding: 0 .85em;
     		border-radius: 10px;
 		}
@@ -278,7 +280,7 @@
 
 		&-filter {
 			display: flex;
-			flex-direction : row;
+			flex-direction : column;
 			.sm & {
 				flex-direction: column;
 				flex-wrap: wrap;
@@ -312,12 +314,15 @@
 		}
 
 		&-name {
-			font-size: 1.85em;
+			font-size: 1.5em;
 			font-weight: 300;
-			color: #000;
+			color: navajowhite;
 			word-break: break-all;
 			margin-bottom: .25em;
 			line-height: 1.5em;
+			flex-wrap: wrap;
+			background-color: #e91e6369;
+			padding: 0 .25em;
 
 
 			.sm & {
@@ -330,7 +335,7 @@
 		&-year {
 			font-size: .75em;
 			margin: 0 !important;
-			color: #1768c7;
+			color: #00bcd4;
 			font-weight: bold;
 			display: block;
 			padding-bottom: .5em;
@@ -349,7 +354,7 @@
 		&-role {
 		    margin: 0 5em 0 0;
 		    text-transform: uppercase;
-    		font-size: 1.25em;
+    		font-size: .85em;
     		letter-spacing: .05em;
 
     		.sm & {
@@ -415,7 +420,7 @@
 		&-location {
 			font-size: .75em;
 			text-transform: uppercase;
-			color: black;
+			color: pink;
     		display: block;
 	
 
@@ -437,7 +442,7 @@
 		display: flex;
 		flex-direction: column;
 		width: 70%;
-    	margin: 2em auto;
+    	margin: 2em auto .5em;
 		
 
 		span {
@@ -477,9 +482,18 @@
 		}
 	}
 
+	.v-item-group {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-grow: 1;
+	}
+
 	.v-expansion-panel {
-		margin-bottom: .5em;
+		margin: .5em;
 		background-position: center 10%;
+		border: 1px solid #e5aec1;
+		flex-grow: 1;
 
 		button {
 			padding: 1em 1.5em;
@@ -494,6 +508,7 @@
 			justify-content: space-between;
 			background-position: right;
 			background-size: contain;
+			border: 0;
 		}
 
 		ul {
@@ -512,57 +527,57 @@
 		border: 2px solid #00bcd4 !important;
 	}
 
-	#cootieShots {
-		 background-position: center 25%;
-		.show-name {
-			font-size: 1.5em;
-		}
-	}
+	// #cootieShots {
+	// 	 background-position: center 25%;
+	// 	.show-name {
+	// 		font-size: 1.5em;
+	// 	}
+	// }
 
-	#nickelAndDimed,
-	#beautifulThing,
-	#leadingLadies,
-	#hairspray,
-	#onceOnThisIsland,
-	#romeoNjuliet,
-	#panniarchy,
-	#sundays {
-		background-position: center;
-	}
+	// #nickelAndDimed,
+	// #beautifulThing,
+	// #leadingLadies,
+	// #hairspray,
+	// #onceOnThisIsland,
+	// #romeoNjuliet,
+	// #panniarchy,
+	// #sundays {
+	// 	background-position: center;
+	// }
 
-	#theVaginaMonologues,
-	#babyshka {
-		background-position: center 40%;
-	}
+	// #theVaginaMonologues,
+	// #babyshka {
+	// 	background-position: center 40%;
+	// }
 
-	#macbeth,
-	#themusicinmyblood {
-		background-position: center 33%;
-	}
+	// #macbeth,
+	// #themusicinmyblood {
+	// 	background-position: center 33%;
+	// }
 
-	#beyondSacred {
-		background-position: center 70%;
-	}
+	// #beyondSacred {
+	// 	background-position: center 70%;
+	// }
 
-	#theOddCouple,
-	#macbeth,
-	#ramonaQuimby,
-	#girlAndHerGoddess {
-		background-size: contain !important;
-		background-position: right;
-	}
+	// #theOddCouple,
+	// #macbeth,
+	// #ramonaQuimby,
+	// #girlAndHerGoddess {
+	// 	background-size: contain !important;
+	// 	background-position: right;
+	// }
 	
-	#theProcedure {
-		background-position: center 52%;
-	}
+	// #theProcedure {
+	// 	background-position: center 52%;
+	// }
 
-	#midsummer {
-		background-position: center 25%;
-	}
+	// #midsummer {
+	// 	background-position: center 25%;
+	// }
 
-	#ozmaOfOz {
-		background-position: center 20%;
-	}
+	// #ozmaOfOz {
+	// 	background-position: center 20%;
+	// }
 
 
 </style>

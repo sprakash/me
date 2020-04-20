@@ -54962,7 +54962,7 @@ module.exports = {
     "poster": "/assets/fake/ramleela.jpg",
     "bloglink": "",
     "gallerylink": "https: www.instagram.com/p/B-ZvibMp3oy/?utm_source=ig_web_button_share_sheet",
-    "mainpic": "https://i.imgur.com/dOi1G8K.jpg",
+    "mainpic": "https://i.imgur.com/d4pFusw.jpg",
     "id": "ramleela"
   }, {
     "name": "Sundays w/ Chitra & Chaitali - Tour",
@@ -55551,6 +55551,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
+//
 var _default = {
   name: 'ShowList',
   components: {},
@@ -55615,6 +55618,12 @@ exports.default = _default;
     _c("section", { staticClass: "show-container" }, [
       _c("div", { staticClass: "show-filter" }, [
         _c(
+          "a",
+          { staticClass: "training-link", attrs: { href: "#trainingSkills" } },
+          [_vm._v("see training and skills information")]
+        ),
+        _vm._v(" "),
+        _c(
           "div",
           { staticClass: "show-content" },
           [
@@ -55622,7 +55631,7 @@ exports.default = _default;
             _vm._v(" "),
             _c(
               "v-expansion-panels",
-              { attrs: { accordion: "", multiple: "" } },
+              { attrs: { accordion: "", multiple: "", focusable: "" } },
               _vm._l(_vm.myJson["Theatre"], function(entry, i) {
                 return entry[_vm.sortKey] === _vm.showFilter ||
                   _vm.showFilter === "All"
@@ -55633,7 +55642,8 @@ exports.default = _default;
                         style: {
                           backgroundImage: "url(" + entry.mainpic + ")",
                           backgroundRepeat: "no-repeat",
-                          backgroundSize: "cover",
+                          backgroundSize: "contain",
+                          backgroundPosition: "center right",
                           borderRadius: "10px"
                         },
                         attrs: { item: entry, id: entry.id }
@@ -55641,7 +55651,7 @@ exports.default = _default;
                       [
                         _c("v-expansion-panel-header", [
                           _c("span", { staticClass: "show-info" }, [
-                            _c("span", { staticClass: "show-header" }, [
+                            _c("div", { staticClass: "show-header" }, [
                               _c("span", { staticClass: "show-name" }, [
                                 _vm._v(_vm._s(entry.name))
                               ]),
@@ -56683,6 +56693,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
 var _default = {
   name: 'Connect',
   components: {
@@ -56942,6 +56954,20 @@ var staticRenderFns = [
                           ]
                         )
                       ])
+                    ]),
+                    _vm._v(" "),
+                    _c("span", [
+                      _vm._v("| Subscribe to the blog "),
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            href: "http://shubhraprakash.blogspot.com/",
+                            target: "_blank"
+                          }
+                        },
+                        [_vm._v("here")]
+                      )
                     ])
                   ]),
                   _vm._v(" "),
@@ -57166,7 +57192,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58152" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50839" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
