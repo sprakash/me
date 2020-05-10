@@ -218,8 +218,8 @@ li a:hover {
 .panel-content {
   padding: 2em;
   line-height: 2em;
-  font-family: Cambria;
-  font-size: 1em;
+  font-family: monospace;
+  font-size: 1.25em;
   color: #ecda4c;
   letter-spacing: 0.2em;
   font-weight: lighter;
@@ -481,12 +481,14 @@ li a:hover {
 
 .longbio,
 .fontwala {
-  font-family: "Cambria";
-  font-size: 0.93em;
+  font-family: monospace;
+  font-size: 1.15em;
+  font-weight: normal;
   word-spacing: 0.2em;
   line-height: 2em;
   margin: 0.5em;
   padding: 0 1em;
+  text-align: center;
 }
 .md .longbio,
 .md .fontwala {
@@ -517,7 +519,8 @@ li a:hover {
 #announce-content {
   color: #000;
   display: flex;
-  font-size: 0.75em;
+  font-family: monospace;
+  font-size: 1em;
   text-align: center;
   align-items: center;
   justify-content: space-between;

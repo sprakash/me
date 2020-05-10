@@ -47,7 +47,8 @@
 	#announce-content {
 		color: #000;
 	    display: flex;
-	    font-size: 0.75em;
+	    font-family: monospace;
+	    font-size: 1em;
 	    text-align: center;
 	    align-items: center;
 	    justify-content: space-between;

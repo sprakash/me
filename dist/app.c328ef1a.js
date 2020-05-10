@@ -54055,9 +54055,6 @@ exports.default = void 0;
 //
 //
 //
-//
-//
-//
 var _default = {
   name: 'Bio',
   components: {},
@@ -54095,7 +54092,13 @@ var staticRenderFns = [
       _c("div", { staticClass: "longbio" }, [
         _c("span", [
           _vm._v(
-            "Welcome to my website. Here you can learn about my work on stage, film and digital medium as a performer, writer and producer.  My goal is to create and devise new work.  Next, I aspire to create my most ambitious work yet : Fontwala inspired by the story of my uncle’s life as an artist, entreprenuer and visionary of Indian letterforms. Read all about Fontwala. "
+            "Welcome to my website. Here you can learn about my work on stage, film and digital medium as a performer, writer and producer.  My goal is to create and devise original work.  Next, I aspire to create my most ambitious work yet : "
+          ),
+          _c("span", { staticStyle: { "font-size": "1.15em" } }, [
+            _vm._v("FONTWALA")
+          ]),
+          _vm._v(
+            " a multi-disciplinary work inspired by the story of my uncle’s life as an artist, entreprenuer and visionary of Indian letterforms. Read all about Fontwala, "
           ),
           _c(
             "a",
@@ -54106,6 +54109,19 @@ var staticRenderFns = [
               }
             },
             [_vm._v("here")]
+          ),
+          _vm._v(
+            ".  This site has been created by yours truly using vuejs, the code can be checked out on "
+          ),
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://github.com/sprakash/me",
+                target: "_blank"
+              }
+            },
+            [_vm._v("GitHub")]
           ),
           _vm._v(".")
         ])
@@ -54239,7 +54255,7 @@ var staticRenderFns = [
               },
               [
                 _c("img", {
-                  attrs: { src: "/twitter.f2da1eec.svg" }
+                  attrs: { src: "/9abbadf8ad45093dd959308cf2da1eec.svg" }
                 })
               ]
             )
@@ -54256,7 +54272,7 @@ var staticRenderFns = [
               },
               [
                 _c("img", {
-                  attrs: { src: "/fb.efb36eed.svg" }
+                  attrs: { src: "/7398511436994c91ceb88dd1efb36eed.svg" }
                 })
               ]
             )
@@ -54273,7 +54289,7 @@ var staticRenderFns = [
               },
               [
                 _c("img", {
-                  attrs: { src: "/linkedin.15978cba.svg" }
+                  attrs: { src: "/61bd9491fed7d4e18a928fb915978cba.svg" }
                 })
               ]
             )
@@ -54290,7 +54306,7 @@ var staticRenderFns = [
               },
               [
                 _c("img", {
-                  attrs: { src: "/insta.f364b010.svg" }
+                  attrs: { src: "/a5dcc2b43eb5d324421dacf2f364b010.svg" }
                 })
               ]
             )
@@ -54307,7 +54323,7 @@ var staticRenderFns = [
               },
               [
                 _c("img", {
-                  attrs: { src: "/github.373d19b5.svg" }
+                  attrs: { src: "/da3ae6189d0c9e4a71760f73373d19b5.svg" }
                 })
               ]
             )

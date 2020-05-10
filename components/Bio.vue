@@ -1,10 +1,7 @@
 <template>
 	<div>
 		<div class="longbio">
-		<span>Welcome to my website. Here you can learn about my work on stage, film and digital medium as a performer, writer and producer.  My goal is to create and devise new work.  Next, I aspire to create my most ambitious work yet : Fontwala inspired by the story of my uncle’s life as an artist, entreprenuer and visionary of Indian letterforms. Read all about Fontwala. <a href="http://sprakash.github.io/portfolio/fontwala.html" target="_blank">here</a>.</span>  
-		<!-- <span class="quote">“How we spend our days is how we spend our lives.”  - Annie Dillard </span>
-	    <section id="bio-action"><span>Download Resume</span> <span>Subscribe to Blog</span></section> -->
-
+		<span>Welcome to my website. Here you can learn about my work on stage, film and digital medium as a performer, writer and producer.  My goal is to create and devise original work.  Next, I aspire to create my most ambitious work yet : <span style="font-size:1.15em;">FONTWALA</span> a multi-disciplinary work inspired by the story of my uncle’s life as an artist, entreprenuer and visionary of Indian letterforms. Read all about Fontwala, <a href="http://sprakash.github.io/portfolio/fontwala.html" target="_blank">here</a>.  This site has been created by yours truly using vuejs, the code can be checked out on <a href="https://github.com/sprakash/me" target="_blank">GitHub</a>.</span>
 		</div>
 	</div>
 </template>
@@ -79,12 +76,14 @@
 
 	.longbio,
 	.fontwala {
-		font-family: 'Cambria';
-	    font-size: .93em;
+		font-family: monospace;
+	    font-size: 1.15em;
+	    font-weight: normal;
 	    word-spacing: .2em;
 	    line-height: 2em;
 	    margin: .5em;
 	    padding: 0 1em;
+	    text-align: center;
 
 	    .md & {
 	    	font-size: .75em;

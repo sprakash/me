@@ -229,8 +229,8 @@
 	.panel-content {
 		padding: 2em;
 	    line-height: 2em;
-	    font-family: Cambria;
-	    font-size: 1em;
+	    font-family: monospace;
+	    font-size: 1.25em;
 	    color: #ecda4c;
 	    letter-spacing: .2em;
 	    font-weight: lighter;
