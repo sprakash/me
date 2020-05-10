@@ -8,7 +8,7 @@
 	<section class="slicinItup" id="digital-content"> 
 <section id="digital-title">        
  <span>
-"a meaningful life is less about finding your ‘real’ self than expanding its boundaries." <a href="https://aeon.co/ideas/which-is-more-fundamental-processes-or-things" target="_blank">(from)</a>
+<quote>"a meaningful life is less about finding your ‘real’ self than expanding its boundaries."</quote> <a href="https://aeon.co/ideas/which-is-more-fundamental-processes-or-things" target="_blank">(from)</a>
 </span>
 <div>
  	Expanding my boundaries is central to my undertaking of any creative work, here are projects which gave me an opportunity to bring together my different skills sets. Exploring performance in the context of technology and vice versa are areas of interest for me. You can click on each project below to find more details.
@@ -17,7 +17,7 @@
 	<section id="digital-groups">
 		<section class="digital-groups">
 			<div>
-				<h3>Priya's Shakti 	<span>short film and augmented reality comic book</span> <a href="https://sprakash.github.io/portfolio/priyashakti.html" target="_blank">[watch]</a>
+				<h3>Priya's Shakti <hr class="inner"/>	<span>short film and augmented reality comic book</span> <a href="https://sprakash.github.io/portfolio/priyashakti.html" target="_blank">[watch]</a>
  </h3>
 				<a href="https://sprakash.github.io/portfolio/priyashakti.html" target="_blank"><img src="/assets/fake/priyashakti.jpg"/></a>
 				<p class="artby">Above art by Dan Goldman.</p>
@@ -26,14 +26,14 @@
 			<div>
 					
 
-				<h3>Fontwala: Stone to mobile, what remains ? <span>digital art exhibition</span>					<a href="https://sprakash.github.io/portfolio/fontwala.html" target="_blank">[watch]</a>
+				<h3>Fontwala: Stone to mobile, what remains ? <hr class="inner"/> <span>digital art exhibition</span>					<a href="https://sprakash.github.io/portfolio/fontwala.html" target="_blank">[watch]</a>
   </h3>
 					<a href="https://sprakash.github.io/portfolio/fontwala.html" target="_blank"><img src="/assets/fake/rajeev-typoface.jpg"/></a>
 					<p class="artby">Above art by Rajeev Prakash Khare.</p>
 			</div>
 			<div>
 				
-					<h3>Cast Me! <span>interactive 'choose your own adventure' short film</span> 					<a href="https://video.helloeko.com/v/AK8lqV" target="_blank">[play]</a>
+					<h3>Cast Me! <hr class="inner"/> <span>interactive 'choose your own adventure' short film</span> 					<a href="https://video.helloeko.com/v/AK8lqV" target="_blank">[play]</a>
  </h3>
 					<a href="https://video.helloeko.com/v/AK8lqV" target="_blank"><img src="/assets/fake/castme.png"/></a>
 					<div class="descript">
@@ -94,23 +94,22 @@ h2 {
 }
 
 h3 {
-	color: #f36464;
+	color: #bc1d53;
     text-transform: capitalize;
     margin: 0;
-    padding: .5em 0;
+    padding: 1em .5em;
     font-size: 1.75em;
     background-color: black;
-    font-family: "Cambria";
+    font-family: monospace;
     line-height: 1.25em;
 
 	span {
-		color: white;
+		color: #065172;
 	    text-transform: lowercase;
-	    font-size: .75em;
+	    font-size: .55em;
 	    display: block;
 	    line-height: 1.75em;
-	    border-top: 1px solid white;
-    	margin: 1em 0 0;
+    	margin: 0 auto 1em;
     	padding: 1em 0 0;
 	}
 
@@ -124,9 +123,12 @@ h3 {
 	&:hover {
 		cursor: pointer; 
 	}
+
 }
 
-
+quote {
+	color: #50848b;
+}
 
 
 .digital {
@@ -155,6 +157,11 @@ h3 {
 		 	width: 50%;
 		 	text-align: center;
 		 	margin: 1em;
+		 	font-size: 16px;
+		 	line-height: 26px;
+		 	border: 2px solid;
+    		border-image-slice: 1;
+    		border-image-source: linear-gradient(to left, #580a3d, #84051c, #c3c311, #1fdcaf, #090f54);
 
 		 	.sm & {
 		 		margin: 0;
@@ -174,8 +181,9 @@ h3 {
 		 	 	width: 100%;
 		 	 	text-align: justify;
 		 	 	text-transform: none;
-		 	 	padding: 0 1em;
+		 	 	padding: 0 1em 1em;
 		 	 	display: table-cell;
+		 	 	border: 0 !important;
 
 		 	 	 div {
 		 	 	 	width: 100% !important;
@@ -210,6 +218,10 @@ h3 {
 
 	&-content {
 		padding-top: 4em;
+		background-color: black;
+		font-family: monospace;
+		font-size: 14px;
+		color: #B49393;
 
 		.sm & {
 			padding-top: 2em;
@@ -224,13 +236,18 @@ h3 {
 		padding: 2em 0 0;
 	    display: flex;
 	    flex-direction: column;
-	    font-family: "Cambria";
+	    font-family: monospace;
 
 		span {
 			text-align: center;
 		    font-size: 1.25em;
 		    font-style: italic;
 		    font-weight: bold;
+		    margin-top: .5em;
+		}
+
+		a {
+			color: #3F51B5;
 		}
 
 		div {
@@ -240,7 +257,8 @@ h3 {
 		    text-transform: none;
 		    text-align: justify;
     		width: 85%;
-    		margin: 0 auto;
+    		margin: 0 auto 1em;
+    		font-family: monospace;
 
     		.sm & {
     			padding-bottom: 1em;
@@ -281,6 +299,13 @@ h3 {
     padding: 0;
     position: relative;
     top: -16px;
+}
+
+hr.inner {
+	border-width: .15px;
+	border-color: #0e555e;
+	width: 50%;
+	margin: .75em auto 0;
 }
 
 

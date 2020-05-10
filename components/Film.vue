@@ -19,6 +19,7 @@ Co-Founded a production company <a href="http://www.randomfoxproductions.com" ta
 	<section id="films" class="films-group">
 		<div class="films-look">
 			<h2>Actor &amp; Co-Producer</h2>
+			<hr class="inner"/>
 			<h3>Vanilla</h3>
 
 			<a class="films-watch" href="https://www.youtube.com/watch?v=HzFG3Vi6zw8" target="_blank">
@@ -36,6 +37,7 @@ Stella is a baker who has been running her business with a recipe for a deliciou
 		</div>
 		<div>
 			<h2>Director &amp; Co-Producer</h2>
+			<hr class="inner"/>
 			<h3>Funny Faces</h3>
 
 			    <a class="films-watch" href="https://www.youtube.com/watch?v=b5XSnrcGjqs" target="_blank">
@@ -53,6 +55,7 @@ Stella is a baker who has been running her business with a recipe for a deliciou
 		</div>
 		<div>
 			<h2>Writer, Director &amp; Producer</h2>
+			<hr class="inner"/>	
 			<h3>Three Dates</h3>
 
 			 <a class="films-watch" href="https://vimeo.com/65866310" target="_blank">
@@ -75,6 +78,7 @@ Stella is a baker who has been running her business with a recipe for a deliciou
 		<div class="films-group">
 			<div>
 				<h3>Priya's Mirror</h3>
+				<hr class="inner"/>
 				<h4>augmented reality comic book</h4>
 				<a href="https://www.priyashakti.com/priyas-mirror" target="_blank" class="films-watch">
 					 <img src="/assets/fake/priyasmirror.png"/>
@@ -86,6 +90,7 @@ Stella is a baker who has been running her business with a recipe for a deliciou
 			</div>
 			<div>
 				<h3>Karma Killings</h3>
+				<hr class="inner"/>
 				<h4>netflix / amazon video / itunes</h4>
 
 				<a class="films-watch" href="https://www.karmakillings.com/" target="_blank" style="width:100%;">
@@ -101,6 +106,7 @@ Stella is a baker who has been running her business with a recipe for a deliciou
 			</div>
 			<div>
 				<h3>Theater and Sex Work</h3>
+				<hr class="inner"/>
 				<h4>short documentary</h4>
 
 				<a class="films-watch" href="https://vimeo.com/220498985" target="_blank">
@@ -199,21 +205,30 @@ header {
 }
 	
 a {
-	color: orange !important; 
+	color: #a5641b  !important; 
 	font-size: 1em;
 	font-weight: bolder;
+	text-decoration: none;
+}
+
+hr {
+	border-width: .15px;
+    border-color: #503502;
 }
 
 h2 {
 	font-size: 1.25em;
-	color: #500606;
+	color: #f3dfae;
 	text-transform: capitalize;
+	margin: 1em 0;
+	font-weight: normal;
 }
 
 h3 {
-	color: #64abf3;
+	color: #f3dfae;
 	text-transform: capitalize;
 	font-size: 1.85em;
+	font-weight: normal;
 
 	.sm &,
 	.md & {
@@ -231,6 +246,7 @@ h3 {
 		width: 100%;
 		padding: 0 0 2em;
 
+
 		.sm &,
 		.md & {
 			flex-direction: column;
@@ -239,11 +255,14 @@ h3 {
 		 div {
 		 	width: 30%;
 		 	text-align: center;
-		 	background-color: #f5d5a661;
+    		border: 2px solid;
+    		border-image-source: linear-gradient(to left, #580a3d, #84051c, #c3c311, #1fdcaf, #090f54);
+    		border-image-slice: 1;
 
 		 	.sm &,
 		 	.md & {
 		 		width: 100%;
+		 		margin-top: 2.5em;
 		 	}
 
 		 	 img {
@@ -257,10 +276,13 @@ h3 {
 		 	 	padding: 0 1em;
 		 	 	display: table-cell;
 		 	 	background: none;
+		 	 	border: 0 !important;
+		 	 	padding-bottom: 1em;
 
 		 	 	 div {
 		 	 	 	width: 100% !important;
 		 	 	 	cursor: pointer;
+		 	 	 	border: 0 !important;
 		 	 	 }
 
 		 	 	 button {
@@ -277,6 +299,12 @@ h3 {
 		 	 	 }
 		 	 }
 		 }
+	}
+
+	&-look {
+		border: 2px solid;
+    	border-image-source: linear-gradient(to left, #580a3d, #84051c, #c3c311, #1fdcaf, #090f54);
+    	border-image-slice: 1;
 	}
 
 	&-play {
@@ -298,6 +326,10 @@ h3 {
 
 	&-content {
 		padding-top: 8em;
+	    font-family: monospace;
+	    font-size: 16px;
+	    background-color: black;
+	    color: #f3dfae;
 
 		.sm & {
 			padding-top: 8em;
@@ -317,7 +349,7 @@ h3 {
 		}
 
 		a {
-			width: 20%;
+			width: 35%;
 
 			.sm & {
 				width: 100%;
@@ -326,6 +358,7 @@ h3 {
 
 		img {
 			width: 100%;
+			background-color: white;
 		}
 		span {
 			padding: .5em 2em;
@@ -343,6 +376,7 @@ h3 {
 	
 	&-content {
 		width: 100% !important;
+		border: 0 !important;
 	
 		&:after {
 			background-image: url('/assets/icons/play.svg');
@@ -362,6 +396,7 @@ h3 {
 	&-parent {
 		position:relative;
 		width: 100% !important;
+		border: 0 !important;
 	}
 
 }
@@ -392,6 +427,12 @@ h3 {
 		width: 100% !important;
 	}
 
+}
+
+hr.inner {
+		border-width: .15px;
+		border-color: #734a17;
+    	width: 50%;
 }
 
 

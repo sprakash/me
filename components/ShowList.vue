@@ -43,7 +43,7 @@
 				</tr>
 			</table> -->
 
-			 	<a href="#trainingSkills" class="training-link">see training and skills information</a>
+			 	<a href="#trainingSkills" class="training-link">&darr; see training and skills information &darr;</a>
 				<div class="show-content">
 					<div class="show-headers">
 						<span>SHOWS / PLAYS / PERFORMANCES </span>
@@ -57,9 +57,10 @@
 					    <v-expansion-panel v-for="(entry,i) in myJson['Theatre']"
 							    v-if="entry[sortKey] === showFilter || showFilter === 'All'"
 							    :item="entry"
-					     		:key="i"  v-bind:id="entry.id"  :style="{ backgroundImage: `url(${entry.mainpic})`, backgroundRepeat:`no-repeat`, backgroundSize: `contain`, backgroundPosition: `center right`, borderRadius : `10px` }">
+					     		:key="i"  v-bind:id="entry.id">
 					      <v-expansion-panel-header>
 					      	<span class="show-info">
+					      		<div class="show-image" :style="{ backgroundImage: `url(${entry.mainpic})`}"> </div>
 						      	 <div class="show-header">
 							      	<span class="show-name">{{entry.name}}</span> 
 							      	<span class="show-details">
@@ -108,7 +109,7 @@
                 <li>Indian Classical Singing (Kirana Gharana), private coaching w/ Sandip Bhattacharjee. New York &amp; India.</li>
                 <li>On Camera Scene Study w/ Courtney Burr at Margie Haber Studio, Los Angeles. </li>
                 <li>Film Acting Technique w/ Nancy Berwid at FirstTake Acting Studio, San Francisco. </li>
-                <li>Musical Theatre Summer Conservatory w/ Marc Jacobs, Notre Dame De Namur University, Silicon Vallery.</li>
+                <li>Musical Theatre Summer Conservatory w/ Marc Jacobs, Notre Dame De Namur University, Silicon Valley.</li>
                 <li>Voice/Singing for Musical Theatre, Private Coaching w/ Michael Pesce, New York City.</li>
                 <li>Acting Shakespeare’s Verse, Private coaching w/ Deloss Brown, New York City. 
 </li>
@@ -234,14 +235,34 @@
 		&-container {
 			margin: 0 auto;
 			padding: 0 1em;
+			background-image: url(/assets/fake/mandolin.jpg);
+    		background-repeat: repeat-y;
+    		background-size: contain;
+		}
+
+		&-content {
+			background-color: #000000c2;
+		}
+
+		&-image {
+			background-repeat:no-repeat;
+			background-size: contain;
+			background-position: center;
+			padding: 10em; 
+
+			.v-expansion-panel-header--active & {
+				background-size: contain;
+			}
 		}
 
 		&-info {
 			display:flex;
-			flex-direction: row;
+			flex-direction: column;
 			justify-content: space-between;
-    		padding: 0 .85em;
     		border-radius: 10px;
+    		text-align: center;
+    		font-size: .75em;
+    		width: 100%;
 		}
 
 		&-mainImage {
@@ -256,7 +277,7 @@
 
 		&-headers {
 			font-size: 1.25em;
-		    color: navajowhite;
+		    color: #7d4d05;
 		    width: 100%;
 		    display: flex;
 		    letter-spacing: .1em;
@@ -311,6 +332,10 @@
     		.md & {
     			text-align: left;
     		}
+
+    		.v-expansion-panel-header--active & {
+    			display: none;
+    		}
 		}
 
 		&-name {
@@ -321,8 +346,9 @@
 			margin-bottom: .25em;
 			line-height: 1.5em;
 			flex-wrap: wrap;
-			background-color: #e91e6369;
+			background-color: #05536b73;
 			padding: 0 .25em;
+			text-transform: uppercase;
 
 
 			.sm & {
@@ -352,7 +378,6 @@
 
 		&-year, 
 		&-role {
-		    margin: 0 5em 0 0;
 		    text-transform: uppercase;
     		font-size: .85em;
     		letter-spacing: .05em;
@@ -434,6 +459,7 @@
 		&-side {
 			  display: flex;
     		  flex-direction: column;
+    		  background-color: #000000e0;
 		}
 
 	}
@@ -462,8 +488,8 @@
 		    flex-direction: row;
 
 			li {
-				color: #f899ab;
-				border: 1px solid #f899ab;
+				color: #2b8492;
+				border: 1px solid #2e2d69;
 				font-weight: bold;
 				padding: .5em 1em;
 				text-align: center;
@@ -490,22 +516,28 @@
 	}
 
 	.v-expansion-panel {
-		margin: .5em;
+		margin: .5em 1.5em;
 		background-position: center 10%;
-		border: 1px solid #e5aec1;
+		border: 2px solid;
+    	border-image-source: linear-gradient(to left, #40040f, #4e4e00, #045844, #090f54);
+    	border-image-slice: 1;
 		flex-grow: 1;
 
+		&:hover {
+			box-shadow: 0px 0px 20px 0px #e91e63;
+		}
+
 		button {
-			padding: 1em 1.5em;
+			padding: .25em 1em;
 		    background-color: #03a9f40f;
 		    font-size: 1em;
 		    color: #084086;
-		    text-align: justify;
 		    width: 100%;
 		    font-weight: lighter;
 		    display: flex;
 		    cursor: pointer;
-			justify-content: space-between;
+			justify-content: center;
+			background-color: #130327bf;
 			background-position: right;
 			background-size: contain;
 			border: 0;

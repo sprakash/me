@@ -99,7 +99,8 @@ header {
 #theatre {
 
     &-content {
-        
+
+        font-family: monospace;
         padding-top: 2em;
 
         .sm & {
@@ -198,13 +199,15 @@ input[type="radio"] {
 
 .training-link {
     text-align: center;
-    letter-spacing: .25em;
-    font-family: Cambria;
-    color: #5aa8bf;
+    letter-spacing: 0.25em;
+    font-family: monospace;
+    color: #89cee2;
     font-size: 1em;
     text-transform: uppercase;
     text-decoration: none;
     margin-bottom: 1em;
+    font-weight: bold;
+    margin: 1em 0;
 }
 
 #trainingSkills { 
@@ -228,14 +231,13 @@ input[type="radio"] {
     }
 
     li {
-            color: white;
+            color: #907013;
             text-align: center;
             text-transform: uppercase;
             font-size: 2em;
             line-height: 1.85em;
-            border: 1px solid white;
             padding: 1em;
-            font-weight: bold;
+            font-weight: normal;
 
         .md & {
             padding: 1em 0 1em 1em;
@@ -244,8 +246,7 @@ input[type="radio"] {
         }
 
         a {
-            font-weight: bold;
-            color: #78B9E8 !important;
+            color: #0d6aad !important;
         }
     }
 }
@@ -273,6 +274,7 @@ input[type="radio"] {
     letter-spacing: .15em;
     color: navajowhite;
     text-align: center;
+    border-bottom: 1px solid #4c2111;
 
     .sm &,
     .md & {

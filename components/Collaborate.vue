@@ -8,7 +8,7 @@
 <section id="connect-title">
         <h1>Recent Collaborations</h1>
 </section>
-<hr/>
+<hr class="inner"/>
 		<section id="collaborate-sections">
 		<section>
 				<div id="collaborate">
@@ -22,10 +22,11 @@
 
 						   </div>
 						   <div class="collab-text">
-						   	I wrote, directed and staged a children's play for an organization: Just For Myself for their annual show for the organization in March 2020. Just For Myself is a not-for-profit organization that educates children of construction workes and house help, helps them get placed in schools and provides for basic nutrition and counseling.  The organization is based in Gurgaon, Haryana. The founder Mrs. Ranjana Joshi entrusted me with writing a play based on the story of how her organization came to be. The play includes music and movement. I wrote the piece and rehearsed with the children in a park of their community for several weekends to present a stage show. They were coached in performance on stage, voice work and scene improvisation.
+						   	I wrote, directed and staged a children's play for an organization called Just For Myself in March 2020. Just For Myself is a not-for-profit organization that educates children of construction workes and house help, helps them get placed in schools and provides for basic nutrition and counseling.  The organization is based in Gurgaon, Haryana. The founder Mrs. Ranjana Joshi entrusted me with writing a play based on the story of how her organization came to be. The play includes music and movement. I wrote the piece and rehearsed with the children in a park of their community for several weekends to present a stage show. They were coached in performance on stage, voice work and scene improvisation.
 							</div>
 						</div>
 					</div>
+					<hr class="inner"/>
 					<div class="collab">
 						<h2>Code</h2>
 						<div class="collab-content">
@@ -37,6 +38,7 @@
 						    </div>
 						</div>
 					</div>
+					<hr class="inner"/>
 					<div class="collab">
 						<h2>Filming / Digital</h2>
 						<div class="collab-content">
@@ -47,6 +49,7 @@
 						</div>
 					</div>
 				</div>
+				<hr class="inner" />
 				<section id="reachout">
 					<h2>connect</h2>
 					<div>
@@ -124,15 +127,26 @@ header {
 	}
 }
 
+h2 { 
+	color: #006976;
+    font-size: 2em;
+    text-align: center;
+}
+
 #topest {
 	width: 100%;
+}
+
+.slicinItup {
+	background-color: black;
+    color: #7c803c;
 }
 
 .slicinItup h1 {
 	text-transform: capitalize;
     margin: 0;
-    font-size: 1.85em;
-    color: black; 
+    font-size: 2.5em;
+    color: #99473f; 
     letter-spacing: 0.05em;
     font-weight: bold;
     padding-top: 1em;
@@ -149,13 +163,14 @@ header {
 		}
 
 		.collab {
-			border-bottom: 1px solid lightgrey;
 			padding-top: .5em;
 			padding-bottom: 2em;
 
 			a { 
 				text-decoration: underline !important;
-				color: #2eaabe !important;
+			    color: #2eaabe !important;
+			    text-transform: lowercase;
+			    letter-spacing: .15em;
 			}
 
 			&-content {
@@ -220,6 +235,7 @@ header {
 	&-content {
 		padding-top: 4em;
 		font-weight: 100;
+		font-family: monospace;
 
 		.sm & {
 			padding-top: 2em;
@@ -242,7 +258,7 @@ header {
 		    text-align: left;
 		    font-weight: bold;
 		    border-bottom: 1px solid black;
-		    text-transform: capitalize;
+		    text-transform: uppercase;
 
 			a { 
 				text-decoration: underline !important;
@@ -261,23 +277,28 @@ header {
 		}
 		article {
 			font-weight: bold;
-			padding: 0.5em;
+			padding: 1em 1.5em;
 	    	text-align: center;
 	    	background: linear-gradient(270deg, #f970b1, #f5d880, #e27f5f, #00c3ff);
 	    	text-transform: none;
+	    	color: black;
+    		font-size: 1.5em;
 		}
 	}
 }
 
 #reachout {
 	font-weight: bold;
+    font-size: 16px;
+    margin: 1em 0;
 
 	h2 { 
 		background-color: black;
-	    color: white;
-	    padding: 0 .25em;
+	    color: #144f6a;
+	    padding: 0.75em 0;
 	    text-transform: capitalize;
 	    margin: 0;
+	    text-align: center;
 	}
 }
 
@@ -297,6 +318,11 @@ header {
 	color: white;
 
 	span {
+		img {
+			width: 1.5em;
+			height: 1.5em;
+			background-color: #706969;
+		}
 		&:hover {
 			background: none;
 			border: none;
@@ -324,6 +350,12 @@ header {
 
 .multiple {
 	width: 50% !important;
+}
+
+hr.inner {
+	border: .15px solid #603e0e;
+    width: 50%;
+    margin: 1em auto 0;
 }
 	
 </style>

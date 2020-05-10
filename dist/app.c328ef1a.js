@@ -54728,7 +54728,45 @@ exports.default = _default;
   return _c("div", { attrs: { id: "digital-page" } }, [
     _c("header", [_vm._m(0), _vm._v(" "), _c("Navigation")], 1),
     _vm._v(" "),
-    _vm._m(1)
+    _c(
+      "section",
+      { staticClass: "slicinItup", attrs: { id: "digital-content" } },
+      [
+        _c("section", { attrs: { id: "digital-title" } }, [
+          _c(
+            "span",
+            [
+              _c("quote", [
+                _vm._v(
+                  '"a meaningful life is less about finding your ‘real’ self than expanding its boundaries."'
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "https://aeon.co/ideas/which-is-more-fundamental-processes-or-things",
+                    target: "_blank"
+                  }
+                },
+                [_vm._v("(from)")]
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("div", [
+            _vm._v(
+              "\n \tExpanding my boundaries is central to my undertaking of any creative work, here are projects which gave me an opportunity to bring together my different skills sets. Exploring performance in the context of technology and vice versa are areas of interest for me. You can click on each project below to find more details.\n"
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _vm._m(1)
+      ]
+    )
   ])
 }
 var staticRenderFns = [
@@ -54744,160 +54782,130 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "section",
-      { staticClass: "slicinItup", attrs: { id: "digital-content" } },
-      [
-        _c("section", { attrs: { id: "digital-title" } }, [
-          _c("span", [
-            _vm._v(
-              '\n"a meaningful life is less about finding your ‘real’ self than expanding its boundaries." '
-            ),
+    return _c("section", { attrs: { id: "digital-groups" } }, [
+      _c("section", { staticClass: "digital-groups" }, [
+        _c("div", [
+          _c("h3", [
+            _vm._v("Priya's Shakti "),
+            _c("hr", { staticClass: "inner" }),
+            _vm._v(" "),
+            _c("span", [_vm._v("short film and augmented reality comic book")]),
+            _vm._v(" "),
             _c(
               "a",
               {
                 attrs: {
-                  href:
-                    "https://aeon.co/ideas/which-is-more-fundamental-processes-or-things",
+                  href: "https://sprakash.github.io/portfolio/priyashakti.html",
                   target: "_blank"
                 }
               },
-              [_vm._v("(from)")]
+              [_vm._v("[watch]")]
             )
           ]),
           _vm._v(" "),
-          _c("div", [
-            _vm._v(
-              "\n \tExpanding my boundaries is central to my undertaking of any creative work, here are projects which gave me an opportunity to bring together my different skills sets. Exploring performance in the context of technology and vice versa are areas of interest for me. You can click on each project below to find more details.\n"
-            )
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://sprakash.github.io/portfolio/priyashakti.html",
+                target: "_blank"
+              }
+            },
+            [
+              _c("img", {
+                attrs: { src: "/priyashakti.95c97309.jpg" }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c("p", { staticClass: "artby" }, [
+            _vm._v("Above art by Dan Goldman.")
           ])
         ]),
         _vm._v(" "),
-        _c("section", { attrs: { id: "digital-groups" } }, [
-          _c("section", { staticClass: "digital-groups" }, [
-            _c("div", [
-              _c("h3", [
-                _vm._v("Priya's Shakti \t"),
-                _c("span", [
-                  _vm._v("short film and augmented reality comic book")
-                ]),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href:
-                        "https://sprakash.github.io/portfolio/priyashakti.html",
-                      target: "_blank"
-                    }
-                  },
-                  [_vm._v("[watch]")]
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  attrs: {
-                    href:
-                      "https://sprakash.github.io/portfolio/priyashakti.html",
-                    target: "_blank"
-                  }
-                },
-                [
-                  _c("img", {
-                    attrs: { src: "/priyashakti.95c97309.jpg" }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c("p", { staticClass: "artby" }, [
-                _vm._v("Above art by Dan Goldman.")
-              ])
+        _c("div", [
+          _c("h3", [
+            _vm._v("Fontwala: Stone to mobile, what remains ? "),
+            _c("hr", { staticClass: "inner" }),
+            _vm._v(" "),
+            _c("span", [_vm._v("digital art exhibition")]),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "https://sprakash.github.io/portfolio/fontwala.html",
+                  target: "_blank"
+                }
+              },
+              [_vm._v("[watch]")]
+            )
+          ]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://sprakash.github.io/portfolio/fontwala.html",
+                target: "_blank"
+              }
+            },
+            [
+              _c("img", {
+                attrs: { src: "/rajeev-typoface.2a8ef396.jpg" }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c("p", { staticClass: "artby" }, [
+            _vm._v("Above art by Rajeev Prakash Khare.")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c("h3", [
+            _vm._v("Cast Me! "),
+            _c("hr", { staticClass: "inner" }),
+            _vm._v(" "),
+            _c("span", [
+              _vm._v("interactive 'choose your own adventure' short film")
             ]),
             _vm._v(" "),
-            _c("div", [
-              _c("h3", [
-                _vm._v("Fontwala: Stone to mobile, what remains ? "),
-                _c("span", [_vm._v("digital art exhibition")]),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href:
-                        "https://sprakash.github.io/portfolio/fontwala.html",
-                      target: "_blank"
-                    }
-                  },
-                  [_vm._v("[watch]")]
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  attrs: {
-                    href: "https://sprakash.github.io/portfolio/fontwala.html",
-                    target: "_blank"
-                  }
-                },
-                [
-                  _c("img", {
-                    attrs: { src: "/rajeev-typoface.2a8ef396.jpg" }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c("p", { staticClass: "artby" }, [
-                _vm._v("Above art by Rajeev Prakash Khare.")
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", [
-              _c("h3", [
-                _vm._v("Cast Me! "),
-                _c("span", [
-                  _vm._v("interactive 'choose your own adventure' short film")
-                ]),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href: "https://video.helloeko.com/v/AK8lqV",
-                      target: "_blank"
-                    }
-                  },
-                  [_vm._v("[play]")]
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  attrs: {
-                    href: "https://video.helloeko.com/v/AK8lqV",
-                    target: "_blank"
-                  }
-                },
-                [
-                  _c("img", {
-                    attrs: { src: "/castme.5f133f99.png" }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "descript" }, [
-                _vm._v(
-                  '\n\t\t\t\t\t\ta "choose your own adventure" style short film created as an entry for The Challenge of Diversity competition by Interlude (now acquired by eKo), Games for Change and Tribeca Film Festival. The viewer has the opportunity to audition 5 actresses for the same role of Kaos, sidekick to the superhero in the superhero movie “Bang & Kaos”. The viewer is a casting director and decides who gets called back. The theme was diversity in casting. I picked actresses of different ethnicities and using Interlude’s (now acquired by eKo) platform created an experience where the user can make a decision to cast the role. Through this work I addressed my own challenges as an actor in the audition room as a person of color.  I developed the concept, served as director, editor and producer.\n\t\t\t\t\t'
-                )
-              ])
-            ])
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "https://video.helloeko.com/v/AK8lqV",
+                  target: "_blank"
+                }
+              },
+              [_vm._v("[play]")]
+            )
+          ]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://video.helloeko.com/v/AK8lqV",
+                target: "_blank"
+              }
+            },
+            [
+              _c("img", {
+                attrs: { src: "/castme.5f133f99.png" }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "descript" }, [
+            _vm._v(
+              '\n\t\t\t\t\t\ta "choose your own adventure" style short film created as an entry for The Challenge of Diversity competition by Interlude (now acquired by eKo), Games for Change and Tribeca Film Festival. The viewer has the opportunity to audition 5 actresses for the same role of Kaos, sidekick to the superhero in the superhero movie “Bang & Kaos”. The viewer is a casting director and decides who gets called back. The theme was diversity in casting. I picked actresses of different ethnicities and using Interlude’s (now acquired by eKo) platform created an experience where the user can make a decision to cast the role. Through this work I addressed my own challenges as an actor in the audition room as a person of color.  I developed the concept, served as director, editor and producer.\n\t\t\t\t\t'
+            )
           ])
         ])
-      ]
-    )
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -55554,6 +55562,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
 var _default = {
   name: 'ShowList',
   components: {},
@@ -55620,7 +55629,7 @@ exports.default = _default;
         _c(
           "a",
           { staticClass: "training-link", attrs: { href: "#trainingSkills" } },
-          [_vm._v("see training and skills information")]
+          [_vm._v("↓ see training and skills information ↓")]
         ),
         _vm._v(" "),
         _c(
@@ -55637,20 +55646,17 @@ exports.default = _default;
                   _vm.showFilter === "All"
                   ? _c(
                       "v-expansion-panel",
-                      {
-                        key: i,
-                        style: {
-                          backgroundImage: "url(" + entry.mainpic + ")",
-                          backgroundRepeat: "no-repeat",
-                          backgroundSize: "contain",
-                          backgroundPosition: "center right",
-                          borderRadius: "10px"
-                        },
-                        attrs: { item: entry, id: entry.id }
-                      },
+                      { key: i, attrs: { item: entry, id: entry.id } },
                       [
                         _c("v-expansion-panel-header", [
                           _c("span", { staticClass: "show-info" }, [
+                            _c("div", {
+                              staticClass: "show-image",
+                              style: {
+                                backgroundImage: "url(" + entry.mainpic + ")"
+                              }
+                            }),
+                            _vm._v(" "),
                             _c("div", { staticClass: "show-header" }, [
                               _c("span", { staticClass: "show-name" }, [
                                 _vm._v(_vm._s(entry.name))
@@ -55794,7 +55800,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("li", [
               _vm._v(
-                "Musical Theatre Summer Conservatory w/ Marc Jacobs, Notre Dame De Namur University, Silicon Vallery."
+                "Musical Theatre Summer Conservatory w/ Marc Jacobs, Notre Dame De Namur University, Silicon Valley."
               )
             ]),
             _vm._v(" "),
@@ -55936,7 +55942,7 @@ render._withStripped = true
       
       }
     })();
-},{"/assets/json/theatre.json":"assets/json/theatre.json","/assets/fake/*.jpg":"../../../../assets/fake/*.jpg","_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Theatre.vue":[function(require,module,exports) {
+},{"/assets/json/theatre.json":"assets/json/theatre.json","/assets/fake/*.jpg":"../../../../assets/fake/*.jpg","C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\mandolin.jpg":[["mandolin.254498a3.jpg","assets/fake/mandolin.jpg"],"assets/fake/mandolin.jpg"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Theatre.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -56222,6 +56228,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
+//
+//
+//
+//
 var _default = {
   name: 'Film',
   components: {
@@ -56340,6 +56352,8 @@ var staticRenderFns = [
           _c("div", { staticClass: "films-look" }, [
             _c("h2", [_vm._v("Actor & Co-Producer")]),
             _vm._v(" "),
+            _c("hr", { staticClass: "inner" }),
+            _vm._v(" "),
             _c("h3", [_vm._v("Vanilla")]),
             _vm._v(" "),
             _c(
@@ -56371,6 +56385,8 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("div", [
             _c("h2", [_vm._v("Director & Co-Producer")]),
+            _vm._v(" "),
+            _c("hr", { staticClass: "inner" }),
             _vm._v(" "),
             _c("h3", [_vm._v("Funny Faces")]),
             _vm._v(" "),
@@ -56416,6 +56432,8 @@ var staticRenderFns = [
           _c("div", [
             _c("h2", [_vm._v("Writer, Director & Producer")]),
             _vm._v(" "),
+            _c("hr", { staticClass: "inner" }),
+            _vm._v(" "),
             _c("h3", [_vm._v("Three Dates")]),
             _vm._v(" "),
             _c(
@@ -56454,6 +56472,8 @@ var staticRenderFns = [
             _c("div", [
               _c("h3", [_vm._v("Priya's Mirror")]),
               _vm._v(" "),
+              _c("hr", { staticClass: "inner" }),
+              _vm._v(" "),
               _c("h4", [_vm._v("augmented reality comic book")]),
               _vm._v(" "),
               _c(
@@ -56482,6 +56502,8 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("div", [
               _c("h3", [_vm._v("Karma Killings")]),
+              _vm._v(" "),
+              _c("hr", { staticClass: "inner" }),
               _vm._v(" "),
               _c("h4", [_vm._v("netflix / amazon video / itunes")]),
               _vm._v(" "),
@@ -56515,6 +56537,8 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("div", [
               _c("h3", [_vm._v("Theater and Sex Work")]),
+              _vm._v(" "),
+              _c("hr", { staticClass: "inner" }),
               _vm._v(" "),
               _c("h4", [_vm._v("short documentary")]),
               _vm._v(" "),
@@ -56695,6 +56719,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
+//
 var _default = {
   name: 'Connect',
   components: {
@@ -56749,7 +56776,7 @@ var staticRenderFns = [
           _c("h1", [_vm._v("Recent Collaborations")])
         ]),
         _vm._v(" "),
-        _c("hr"),
+        _c("hr", { staticClass: "inner" }),
         _vm._v(" "),
         _c("section", { attrs: { id: "collaborate-sections" } }, [
           _c("section", [
@@ -56772,11 +56799,13 @@ var staticRenderFns = [
                   _vm._v(" "),
                   _c("div", { staticClass: "collab-text" }, [
                     _vm._v(
-                      "\n\t\t\t\t\t\t   \tI wrote, directed and staged a children's play for an organization: Just For Myself for their annual show for the organization in March 2020. Just For Myself is a not-for-profit organization that educates children of construction workes and house help, helps them get placed in schools and provides for basic nutrition and counseling.  The organization is based in Gurgaon, Haryana. The founder Mrs. Ranjana Joshi entrusted me with writing a play based on the story of how her organization came to be. The play includes music and movement. I wrote the piece and rehearsed with the children in a park of their community for several weekends to present a stage show. They were coached in performance on stage, voice work and scene improvisation.\n\t\t\t\t\t\t\t"
+                      "\n\t\t\t\t\t\t   \tI wrote, directed and staged a children's play for an organization called Just For Myself in March 2020. Just For Myself is a not-for-profit organization that educates children of construction workes and house help, helps them get placed in schools and provides for basic nutrition and counseling.  The organization is based in Gurgaon, Haryana. The founder Mrs. Ranjana Joshi entrusted me with writing a play based on the story of how her organization came to be. The play includes music and movement. I wrote the piece and rehearsed with the children in a park of their community for several weekends to present a stage show. They were coached in performance on stage, voice work and scene improvisation.\n\t\t\t\t\t\t\t"
                     )
                   ])
                 ])
               ]),
+              _vm._v(" "),
+              _c("hr", { staticClass: "inner" }),
               _vm._v(" "),
               _c("div", { staticClass: "collab" }, [
                 _c("h2", [_vm._v("Code")]),
@@ -56807,6 +56836,8 @@ var staticRenderFns = [
                 ])
               ]),
               _vm._v(" "),
+              _c("hr", { staticClass: "inner" }),
+              _vm._v(" "),
               _c("div", { staticClass: "collab" }, [
                 _c("h2", [_vm._v("Filming / Digital")]),
                 _vm._v(" "),
@@ -56836,6 +56867,8 @@ var staticRenderFns = [
                 ])
               ])
             ]),
+            _vm._v(" "),
+            _c("hr", { staticClass: "inner" }),
             _vm._v(" "),
             _c("section", { attrs: { id: "reachout" } }, [
               _c("h2", [_vm._v("connect")]),
@@ -57192,7 +57225,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50839" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51099" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
