@@ -19,8 +19,8 @@
 			<div>
 				<h3>Priya's Shakti <hr class="inner"/>	<span>short film and augmented reality comic book</span> <a href="https://sprakash.github.io/portfolio/priyashakti.html" target="_blank">[watch]</a>
  </h3>
-				<a href="https://sprakash.github.io/portfolio/priyashakti.html" target="_blank"><img src="/assets/fake/priyashakti.jpg"/></a>
-				<p class="artby">Above art by Dan Goldman.</p>
+				<a href="https://sprakash.github.io/portfolio/priyashakti.html" target="_blank"><img src="/assets/fake/PriyasMask.jpg"/></a>
+				<p class="artby">Above art by Syd Fini & Neda Kazemifar.</p>
 				
 			</div>
 			<div>

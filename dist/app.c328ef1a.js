@@ -54830,13 +54830,13 @@ var staticRenderFns = [
             },
             [
               _c("img", {
-                attrs: { src: "/priyashakti.95c97309.jpg" }
+                attrs: { src: "/PriyasMask.ab432736.jpg" }
               })
             ]
           ),
           _vm._v(" "),
           _c("p", { staticClass: "artby" }, [
-            _vm._v("Above art by Dan Goldman.")
+            _vm._v("Above art by Syd Fini & Neda Kazemifar.")
           ])
         ]),
         _vm._v(" "),
@@ -54957,7 +54957,7 @@ render._withStripped = true
       
       }
     })();
-},{"./Navigation":"components/Navigation.vue","C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\priyashakti.jpg":[["priyashakti.95c97309.jpg","assets/fake/priyashakti.jpg"],"assets/fake/priyashakti.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\rajeev-typoface.jpg":[["rajeev-typoface.2a8ef396.jpg","assets/fake/rajeev-typoface.jpg"],"assets/fake/rajeev-typoface.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\castme.png":[["castme.5f133f99.png","assets/fake/castme.png"],"assets/fake/castme.png"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"assets/json/theatre.json":[function(require,module,exports) {
+},{"./Navigation":"components/Navigation.vue","C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\PriyasMask.jpg":[["PriyasMask.ab432736.jpg","assets/fake/PriyasMask.jpg"],"assets/fake/PriyasMask.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\rajeev-typoface.jpg":[["rajeev-typoface.2a8ef396.jpg","assets/fake/rajeev-typoface.jpg"],"assets/fake/rajeev-typoface.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\me\\assets\\fake\\castme.png":[["castme.5f133f99.png","assets/fake/castme.png"],"assets/fake/castme.png"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"assets/json/theatre.json":[function(require,module,exports) {
 module.exports = {
   "Theatre": [{
     "name": "Ghosts (Hindi)",
