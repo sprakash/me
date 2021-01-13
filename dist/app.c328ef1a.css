@@ -400,9 +400,9 @@ li a:hover {
   background-color: black;
 }
 .md #digital-area {
-  background-size: cover;
+  background-size: contain;
   width: 100%;
-  background-position: 50% 65%;
+  background-position: 50%;
 }
 .md #digital-area .panel-content {
   padding-bottom: 2em;

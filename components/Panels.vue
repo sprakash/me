@@ -469,9 +469,9 @@
 	    }
 
 	    .md & {
-	    	background-size: cover;
+	    	background-size: contain;
 			width: 100%;
-			background-position: 50% 65%;
+			background-position: 50%;
 
 			.panel-content {
 				padding-bottom: 2em;
