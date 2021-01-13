@@ -142,7 +142,7 @@ quote {
 
 		.sm &,
 		.md &{
-			flex-direction: column-reverse;
+			flex-direction: column;
 		}
 
 		&:hover {

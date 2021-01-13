@@ -826,7 +826,7 @@ quote[data-v-4520b8] {
   justify-content: center;
 }
 .sm .digital-groups[data-v-4520b8], .md .digital-groups[data-v-4520b8] {
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 .digital-groups[data-v-4520b8]:hover {
   cursor: pointer;
