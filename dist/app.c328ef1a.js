@@ -54805,7 +54805,7 @@ var staticRenderFns = [
       _c("section", { staticClass: "digital-groups" }, [
         _c("div", [
           _c("h3", [
-            _vm._v("Priya's Shakti "),
+            _vm._v("Priya's Mask "),
             _c("hr", { staticClass: "inner" }),
             _vm._v(" "),
             _c("span", [_vm._v("short film and augmented reality comic book")]),
