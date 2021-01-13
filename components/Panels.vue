@@ -427,7 +427,7 @@
 	}
 
 	#digital-area {
-		background-image: url('https://raw.githubusercontent.com/sprakash/self/master/fontwala.ebfebebd.gif');
+		background-image: url('https://raw.githubusercontent.com/sprakash/self/master/priyasmask.gif');
 		background-repeat: no-repeat;
     	background-size: cover;
 
