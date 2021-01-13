@@ -2,7 +2,7 @@
 	<div class="announce-area">
 		<span id="announce-content">
 			<h1>LATEST NEWS : </h1>
-			<span>Shakespeare Replayed: Tyranny released on Amazon Prime, <a href="https://www.amazon.com/Shakespeare-Replayed-Tyranny-Shubhra-Prakash/dp/B01H1IEVMG" target="_blank">click here to watch my performance</a></span>
+			<span>PRIYA'S MASK : COMIC BOOK AND SHORT FILM ON NPR AND BBC ! (DEC 2020), <a href="https://sprakash.github.io/portfolio/priyashakti.html" target="_blank">CLICK HERE TO READ MORE</a></span>
 			<span class="svgStylin">
 				<span>
 					  <a href="http://twitter.com/durkhaima" target="_blank"><img src="/assets/icons/twitter.svg"></a>

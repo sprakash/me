@@ -54098,7 +54098,7 @@ var staticRenderFns = [
             _vm._v("FONTWALA")
           ]),
           _vm._v(
-            " a multi-disciplinary work inspired by the story of my uncle’s life as an artist, entreprenuer and visionary of Indian letterforms. Read all about Fontwala, "
+            " a multi-media stage show inspired by the life story of a font designer of Indian letterforms. Read all about Fontwala, "
           ),
           _c(
             "a",
@@ -54229,17 +54229,18 @@ var staticRenderFns = [
         _c("h1", [_vm._v("LATEST NEWS : ")]),
         _vm._v(" "),
         _c("span", [
-          _vm._v("Shakespeare Replayed: Tyranny released on Amazon Prime, "),
+          _vm._v(
+            "PRIYA'S MASK : COMIC BOOK AND SHORT FILM ON NPR AND BBC ! (DEC 2020), "
+          ),
           _c(
             "a",
             {
               attrs: {
-                href:
-                  "https://www.amazon.com/Shakespeare-Replayed-Tyranny-Shubhra-Prakash/dp/B01H1IEVMG",
+                href: "https://sprakash.github.io/portfolio/priyashakti.html",
                 target: "_blank"
               }
             },
-            [_vm._v("click here to watch my performance")]
+            [_vm._v("CLICK HERE TO READ MORE")]
           )
         ]),
         _vm._v(" "),
@@ -54255,7 +54256,7 @@ var staticRenderFns = [
               },
               [
                 _c("img", {
-                  attrs: { src: "/9abbadf8ad45093dd959308cf2da1eec.svg" }
+                  attrs: { src: "/twitter.f2da1eec.svg" }
                 })
               ]
             )
@@ -54272,7 +54273,7 @@ var staticRenderFns = [
               },
               [
                 _c("img", {
-                  attrs: { src: "/7398511436994c91ceb88dd1efb36eed.svg" }
+                  attrs: { src: "/fb.efb36eed.svg" }
                 })
               ]
             )
@@ -54289,7 +54290,7 @@ var staticRenderFns = [
               },
               [
                 _c("img", {
-                  attrs: { src: "/61bd9491fed7d4e18a928fb915978cba.svg" }
+                  attrs: { src: "/linkedin.15978cba.svg" }
                 })
               ]
             )
@@ -54306,7 +54307,7 @@ var staticRenderFns = [
               },
               [
                 _c("img", {
-                  attrs: { src: "/a5dcc2b43eb5d324421dacf2f364b010.svg" }
+                  attrs: { src: "/insta.f364b010.svg" }
                 })
               ]
             )
@@ -54323,7 +54324,7 @@ var staticRenderFns = [
               },
               [
                 _c("img", {
-                  attrs: { src: "/da3ae6189d0c9e4a71760f73373d19b5.svg" }
+                  attrs: { src: "/github.373d19b5.svg" }
                 })
               ]
             )
@@ -57241,7 +57242,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51099" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57674" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
