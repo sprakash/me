@@ -53816,6 +53816,7 @@ exports.default = void 0;
 //
 //
 //
+//
 var _default = {
   name: 'Panels',
   props: {
@@ -53953,13 +53954,14 @@ exports.default = _default;
             attrs: { id: singlePanel.id }
           },
           [
+            _c("p", { staticClass: "sectiontitle" }, [
+              _vm._v(_vm._s(singlePanel.title))
+            ]),
+            _vm._v(" "),
             _c(
               "div",
               { staticClass: "panel-content" },
               [
-                _c("h1", { staticClass: "panel-header" }, [
-                  _vm._v(_vm._s(singlePanel.title))
-                ]),
                 _vm._v(
                   "\n\t\t\t\t\t\t\t" +
                     _vm._s(singlePanel.content) +

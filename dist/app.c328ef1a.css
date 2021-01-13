@@ -205,6 +205,18 @@ li a:hover {
 .sm .single-panel:nth-child(3) {
   z-index: 7;
 }
+.single-panel .sectiontitle {
+  padding-left: 0.25em;
+  background: black;
+  margin: 0;
+  font-size: 1.5em;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+.md .single-panel .sectiontitle, .sm .single-panel .sectiontitle {
+  font-size: 4em;
+  padding-left: 0.5em;
+}
 
 .panel-header {
   color: whitesmoke;
@@ -341,6 +353,9 @@ li a:hover {
   margin-left: 0;
   text-align: left;
 }
+#theatre-area .sectiontitle {
+  color: #00BCD4;
+}
 
 #film-area {
   background-image: url("https://raw.githubusercontent.com/sprakash/self/master/vanilla.79896c57.gif");
@@ -364,6 +379,13 @@ li a:hover {
   margin-left: 0;
   text-align: left;
 }
+#film-area .sectiontitle {
+  color: #f3407b;
+}
+.md #film-area .sectiontitle, .sm #film-area .sectiontitle {
+  text-align: right;
+  padding-right: 0.5em;
+}
 
 #digital-area {
   background-image: url("https://raw.githubusercontent.com/sprakash/self/master/priyasmask.gif");
@@ -386,6 +408,9 @@ li a:hover {
   padding-bottom: 2em;
   margin-left: 0;
   text-align: left;
+}
+#digital-area .sectiontitle {
+  color: #39dc5b;
 }
 
 /* Zoom in Keyframes */

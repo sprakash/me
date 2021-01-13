@@ -5,8 +5,9 @@
 				<!-- <div v-bind:id="singlePanel.id" v-bind:style="{zIndex: currentOrder[index].zIndex , minHeight: newHeights}" v-for="(singlePanel, index) in panels" class="single-panel"> -->
 
 					<div v-bind:id="singlePanel.id" v-for="(singlePanel, index) in panels" v-bind:style="{zIndex: currentOrder[index].zIndex , minHeight: newHeights}"  class="single-panel" >
+						<p class="sectiontitle">{{singlePanel.title}}</p>
 						<div class="panel-content">
-							<h1 class="panel-header">{{singlePanel.title}}</h1>
+							<!-- <h1 class="panel-header">{{singlePanel.title}}</h1> -->
 							{{singlePanel.content}}
 			
 							<router-link :to="{name:singlePanel.title}"> More &raquo;</router-link>
@@ -215,6 +216,20 @@
 			}
 		}
 		
+		.sectiontitle {
+			padding-left: .25em;
+			background: black;	
+			margin: 0;
+			font-size: 1.5em;
+			font-family: monospace;
+			text-transform: uppercase;
+			
+			.md &,
+			.sm & {
+				font-size: 4em;
+				padding-left: .5em;
+			}
+		}
 	}
 
 	.panel-header {
@@ -397,6 +412,10 @@
 			}
 
 	    }
+
+		.sectiontitle {
+			color: #00BCD4;
+		}
 	}
 
 	#film-area{
@@ -424,6 +443,16 @@
 				text-align: left;
 			}
 	    }
+
+		.sectiontitle {
+				color: #f3407b;
+
+				.md &,
+				.sm & {
+					text-align: right;
+					padding-right: .5em;
+				}
+		}
 	}
 
 	#digital-area {
@@ -451,6 +480,10 @@
 
 			}
 	    }
+
+		.sectiontitle {
+			color: #39dc5b;
+		}
 	}
 
 
