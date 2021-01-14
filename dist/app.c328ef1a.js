@@ -53864,7 +53864,15 @@ var _default = {
   mounted: function mounted() {
     var panelHeights = window.getComputedStyle(document.getElementById('theatre-area'), null).getPropertyValue('height');
     console.log('from mounted panel' + panelHeights);
-    this.$emit('panelloaded', panelHeights);
+    this.$emit('panelloaded', panelHeights); // let seedtime = new Date(Math.random(1000));
+    // let randomNum = Math.random()*seedtime; 
+    // setInterval(() => {
+    // 	document.querySelector('.panel-content').map(eaPanel, () => {
+    // 			document.querySelector(eaPanel).style.opacity = 1;
+    // 			delay(1500);
+    // 			document.querySelector(eaPanel).style.opacity = 0;
+    // 	});
+    // },3000);
   },
   methods: {
     previousPanel: function previousPanel(node) {
